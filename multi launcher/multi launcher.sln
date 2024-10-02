@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "multi launcher", "multi launcher\multi launcher.csproj", "{42726AC2-B478-41C2-B7C6-0981ED81B479}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42726AC2-B478-41C2-B7C6-0981ED81B479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42726AC2-B478-41C2-B7C6-0981ED81B479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42726AC2-B478-41C2-B7C6-0981ED81B479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42726AC2-B478-41C2-B7C6-0981ED81B479}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9211CDF4-FED4-46F1-88F8-2D5AC60E1B99}
+	EndGlobalSection
+EndGlobal

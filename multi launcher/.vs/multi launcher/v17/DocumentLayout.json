@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tofi1\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|c:\\users\\tofi1\\documents\\github\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\the-window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|solutionrelative:multi launcher\\the-window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|c:\\users\\tofi1\\documents\\github\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\steam-lib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|solutionrelative:multi launcher\\steam-lib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|c:\\users\\tofi1\\documents\\github\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\epic-lib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|solutionrelative:multi launcher\\epic-lib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "steam-lib.cs",
+              "DocumentMoniker": "C:\\Users\\tofi1\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\steam-lib.cs",
+              "RelativeDocumentMoniker": "multi launcher\\steam-lib.cs",
+              "ToolTip": "C:\\Users\\tofi1\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\steam-lib.cs",
+              "RelativeToolTip": "multi launcher\\steam-lib.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T12:25:48.328Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "epic-lib.cs",
+              "DocumentMoniker": "C:\\Users\\tofi1\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\epic-lib.cs",
+              "RelativeDocumentMoniker": "multi launcher\\epic-lib.cs",
+              "ToolTip": "C:\\Users\\tofi1\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\epic-lib.cs",
+              "RelativeToolTip": "multi launcher\\epic-lib.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T12:26:17.319Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "the-window.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\tofi1\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\the-window.cs",
+              "RelativeDocumentMoniker": "multi launcher\\the-window.cs",
+              "ToolTip": "C:\\Users\\tofi1\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\the-window.cs [Design]",
+              "RelativeToolTip": "multi launcher\\the-window.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T12:54:51.132Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
