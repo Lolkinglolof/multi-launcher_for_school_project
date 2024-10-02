@@ -1,17 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\tofi1\\source\\repos\\multi launcher\\",
+  "WorkspaceRootPath": "C:\\Users\\tofi1\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|c:\\users\\tofi1\\source\\repos\\multi launcher\\multi launcher\\the-window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|c:\\users\\tofi1\\documents\\github\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\the-window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|solutionrelative:multi launcher\\the-window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|c:\\users\\tofi1\\source\\repos\\multi launcher\\multi launcher\\steam-lib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|c:\\users\\tofi1\\documents\\github\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\the-window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|solutionrelative:multi launcher\\the-window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|c:\\users\\tofi1\\documents\\github\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|solutionrelative:multi launcher\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|c:\\users\\tofi1\\documents\\github\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\steam-lib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|solutionrelative:multi launcher\\steam-lib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|c:\\users\\tofi1\\source\\repos\\multi launcher\\multi launcher\\epic-lib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|c:\\users\\tofi1\\documents\\github\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\epic-lib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|solutionrelative:multi launcher\\epic-lib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,29 +30,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "steam-lib.cs",
-              "DocumentMoniker": "C:\\Users\\tofi1\\source\\repos\\multi launcher\\multi launcher\\steam-lib.cs",
+              "DocumentMoniker": "C:\\Users\\tofi1\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\steam-lib.cs",
               "RelativeDocumentMoniker": "multi launcher\\steam-lib.cs",
-              "ToolTip": "C:\\Users\\tofi1\\source\\repos\\multi launcher\\multi launcher\\steam-lib.cs",
+              "ToolTip": "C:\\Users\\tofi1\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\steam-lib.cs",
               "RelativeToolTip": "multi launcher\\steam-lib.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-02T12:25:48.328Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "epic-lib.cs",
-              "DocumentMoniker": "C:\\Users\\tofi1\\source\\repos\\multi launcher\\multi launcher\\epic-lib.cs",
+              "DocumentMoniker": "C:\\Users\\tofi1\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\epic-lib.cs",
               "RelativeDocumentMoniker": "multi launcher\\epic-lib.cs",
-              "ToolTip": "C:\\Users\\tofi1\\source\\repos\\multi launcher\\multi launcher\\epic-lib.cs",
+              "ToolTip": "C:\\Users\\tofi1\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\epic-lib.cs",
               "RelativeToolTip": "multi launcher\\epic-lib.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -53,11 +60,37 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\tofi1\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\Program.cs",
+              "RelativeDocumentMoniker": "multi launcher\\Program.cs",
+              "ToolTip": "C:\\Users\\tofi1\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\Program.cs",
+              "RelativeToolTip": "multi launcher\\Program.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAApwA0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T13:06:17.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "the-window.cs",
+              "DocumentMoniker": "C:\\Users\\tofi1\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\the-window.cs",
+              "RelativeDocumentMoniker": "multi launcher\\the-window.cs",
+              "ToolTip": "C:\\Users\\tofi1\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\the-window.cs",
+              "RelativeToolTip": "multi launcher\\the-window.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAuwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T13:04:35.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "the-window.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\tofi1\\source\\repos\\multi launcher\\multi launcher\\the-window.cs",
+              "DocumentMoniker": "C:\\Users\\tofi1\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\the-window.cs",
               "RelativeDocumentMoniker": "multi launcher\\the-window.cs",
-              "ToolTip": "C:\\Users\\tofi1\\source\\repos\\multi launcher\\multi launcher\\the-window.cs [Design]",
+              "ToolTip": "C:\\Users\\tofi1\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\the-window.cs [Design]",
               "RelativeToolTip": "multi launcher\\the-window.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-02T12:54:51.132Z",
