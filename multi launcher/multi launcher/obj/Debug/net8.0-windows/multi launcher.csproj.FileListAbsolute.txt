@@ -15,3 +15,21 @@ C:\Users\tofi1\Documents\GitHub\multi-launcher_for_school_project\multi launcher
 C:\Users\tofi1\Documents\GitHub\multi-launcher_for_school_project\multi launcher\multi launcher\obj\Debug\net8.0-windows\multi launcher.pdb
 C:\Users\tofi1\Documents\GitHub\multi-launcher_for_school_project\multi launcher\multi launcher\obj\Debug\net8.0-windows\multi launcher.genruntimeconfig.cache
 C:\Users\tofi1\Documents\GitHub\multi-launcher_for_school_project\multi launcher\multi launcher\obj\Debug\net8.0-windows\ref\multi launcher.dll
+C:\Users\torbe\Documents\GitHub\multi-launcher_for_school_project\multi launcher\multi launcher\bin\Debug\net8.0-windows\multi launcher.exe
+C:\Users\torbe\Documents\GitHub\multi-launcher_for_school_project\multi launcher\multi launcher\bin\Debug\net8.0-windows\multi launcher.deps.json
+C:\Users\torbe\Documents\GitHub\multi-launcher_for_school_project\multi launcher\multi launcher\bin\Debug\net8.0-windows\multi launcher.runtimeconfig.json
+C:\Users\torbe\Documents\GitHub\multi-launcher_for_school_project\multi launcher\multi launcher\bin\Debug\net8.0-windows\multi launcher.dll
+C:\Users\torbe\Documents\GitHub\multi-launcher_for_school_project\multi launcher\multi launcher\bin\Debug\net8.0-windows\multi launcher.pdb
+C:\Users\torbe\Documents\GitHub\multi-launcher_for_school_project\multi launcher\multi launcher\obj\Debug\net8.0-windows\multi_launcher.the_window.resources
+C:\Users\torbe\Documents\GitHub\multi-launcher_for_school_project\multi launcher\multi launcher\obj\Debug\net8.0-windows\multi launcher.csproj.GenerateResource.cache
+C:\Users\torbe\Documents\GitHub\multi-launcher_for_school_project\multi launcher\multi launcher\obj\Debug\net8.0-windows\multi launcher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\torbe\Documents\GitHub\multi-launcher_for_school_project\multi launcher\multi launcher\obj\Debug\net8.0-windows\multi launcher.AssemblyInfoInputs.cache
+C:\Users\torbe\Documents\GitHub\multi-launcher_for_school_project\multi launcher\multi launcher\obj\Debug\net8.0-windows\multi launcher.AssemblyInfo.cs
+C:\Users\torbe\Documents\GitHub\multi-launcher_for_school_project\multi launcher\multi launcher\obj\Debug\net8.0-windows\multi launcher.csproj.CoreCompileInputs.cache
+C:\Users\torbe\Documents\GitHub\multi-launcher_for_school_project\multi launcher\multi launcher\obj\Debug\net8.0-windows\multi launcher.sourcelink.json
+C:\Users\torbe\Documents\GitHub\multi-launcher_for_school_project\multi launcher\multi launcher\obj\Debug\net8.0-windows\multi launcher.dll
+C:\Users\torbe\Documents\GitHub\multi-launcher_for_school_project\multi launcher\multi launcher\obj\Debug\net8.0-windows\refint\multi launcher.dll
+C:\Users\torbe\Documents\GitHub\multi-launcher_for_school_project\multi launcher\multi launcher\obj\Debug\net8.0-windows\multi launcher.pdb
+C:\Users\torbe\Documents\GitHub\multi-launcher_for_school_project\multi launcher\multi launcher\obj\Debug\net8.0-windows\multi launcher.genruntimeconfig.cache
+C:\Users\torbe\Documents\GitHub\multi-launcher_for_school_project\multi launcher\multi launcher\obj\Debug\net8.0-windows\ref\multi launcher.dll
+C:\Users\torbe\Documents\GitHub\multi-launcher_for_school_project\multi launcher\multi launcher\obj\Debug\net8.0-windows\multi_launcher.Properties.Resources.resources

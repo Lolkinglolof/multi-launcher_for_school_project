@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tofi1\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\multi launcher.csproj": {}
+    "C:\\Users\\torbe\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\multi launcher.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tofi1\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\multi launcher.csproj": {
+    "C:\\Users\\torbe\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\multi launcher.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tofi1\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\multi launcher.csproj",
+        "projectUniqueName": "C:\\Users\\torbe\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\multi launcher.csproj",
         "projectName": "multi launcher",
-        "projectPath": "C:\\Users\\tofi1\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\multi launcher.csproj",
-        "packagesPath": "C:\\Users\\tofi1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tofi1\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\obj\\",
+        "projectPath": "C:\\Users\\torbe\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\multi launcher.csproj",
+        "packagesPath": "C:\\Users\\torbe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\torbe\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tofi1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\torbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("multi launcher")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3dd59cfdb0c66d3f9180fcf500117306377070af")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d3030c021c2ab3e2750b9cda1a4a9334d0e6e557")]
 [assembly: System.Reflection.AssemblyProductAttribute("multi launcher")]
 [assembly: System.Reflection.AssemblyTitleAttribute("multi launcher")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
