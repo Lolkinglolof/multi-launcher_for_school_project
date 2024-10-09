@@ -9,9 +9,9 @@ using System.Diagnostics;
 
 namespace multi_launcher
 {
-    class steam_lib 
+    public class steam_lib 
     {
-        public string placeholdername()
+        public static string placeholdername()
         {
             Directory.GetFiles(@"C:\Program Files(x86)\Steam\steamapps\common");
             DriveInfo[] drives = DriveInfo.GetDrives();
