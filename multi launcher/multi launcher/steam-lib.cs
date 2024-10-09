@@ -9,7 +9,7 @@ using System.Diagnostics;
 
 namespace multi_launcher
 {
-    internal class steam_lib 
+    class steam_lib 
     {
         public void placeholdername()
         {
