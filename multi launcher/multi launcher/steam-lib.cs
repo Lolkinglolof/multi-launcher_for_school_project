@@ -11,7 +11,7 @@ namespace multi_launcher
 {
     internal class steam_lib 
     {
-        private void placeholdername()
+        public void placeholdername()
         {
             Directory.GetFiles(@"C:\Program Files(x86)\Steam\steamapps\common");
             DriveInfo[] drives = DriveInfo.GetDrives();
