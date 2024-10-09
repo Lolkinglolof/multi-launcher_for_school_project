@@ -11,11 +11,11 @@ namespace multi_launcher
 {
     class steam_lib 
     {
-        public void placeholdername()
+        public string placeholdername()
         {
             Directory.GetFiles(@"C:\Program Files(x86)\Steam\steamapps\common");
             DriveInfo[] drives = DriveInfo.GetDrives();
-            MessageBox.Show(drives[0].Name);
+            return drives[0].Name;
         }
     }
 }
