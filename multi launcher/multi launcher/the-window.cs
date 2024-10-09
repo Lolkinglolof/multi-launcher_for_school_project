@@ -44,8 +44,14 @@ namespace multi_launcher
 
         private void button2_Click(object sender, EventArgs e)
         {
-            steam_lib.placeholdername();
+
+            MessageBox.Show(steam_lib.placeholdername());
         }
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             Debug.WriteLine("reloading games");
