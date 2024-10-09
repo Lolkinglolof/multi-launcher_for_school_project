@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
 using System.Windows.Forms;
+using System.IO;
 
 namespace multi_launcher
 {
@@ -41,9 +42,9 @@ namespace multi_launcher
             
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-
+            steam_lib.placeholdername();
         }
         private void button1_Click(object sender, EventArgs e)
         {

@@ -55,10 +55,9 @@ namespace multi_launcher
             // 
             // reloadbutton
             // 
-            reloadbutton.Location = new Point(118, 4);
-            reloadbutton.Margin = new Padding(3, 2, 3, 2);
+            reloadbutton.Location = new Point(135, 5);
             reloadbutton.Name = "reloadbutton";
-            reloadbutton.Size = new Size(118, 22);
+            reloadbutton.Size = new Size(135, 29);
             reloadbutton.TabIndex = 0;
             reloadbutton.Text = "Check for games";
             reloadbutton.UseVisualStyleBackColor = true;
@@ -67,9 +66,9 @@ namespace multi_launcher
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(44, 68);
+            label1.Location = new Point(50, 91);
             label1.Name = "label1";
-            label1.Size = new Size(41, 15);
+            label1.Size = new Size(50, 20);
             label1.TabIndex = 1;
             label1.Text = "SP.E.T.";
             label1.Click += label1_Click;
@@ -88,9 +87,8 @@ namespace multi_launcher
             panel1.AutoSize = true;
             panel1.Controls.Add(panel2);
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(850, 100);
+            panel1.Size = new Size(971, 133);
             panel1.TabIndex = 2;
             // 
             // panel2
@@ -101,18 +99,20 @@ namespace multi_launcher
             panel2.Controls.Add(panel4);
             panel2.Controls.Add(panel6);
             panel2.Controls.Add(panel5);
-            panel2.Location = new Point(3, 3);
+            panel2.Location = new Point(3, 4);
+            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(837, 80);
+            panel2.Size = new Size(956, 106);
             panel2.TabIndex = 0;
             // 
             // panel4
             // 
             panel4.BackgroundImage = Properties.Resources._41530da57b50b445c8b914f829826947;
             panel4.BackgroundImageLayout = ImageLayout.Stretch;
-            panel4.Location = new Point(18, 18);
+            panel4.Location = new Point(21, 24);
+            panel4.Margin = new Padding(3, 4, 3, 4);
             panel4.Name = "panel4";
-            panel4.Size = new Size(42, 42);
+            panel4.Size = new Size(48, 56);
             panel4.TabIndex = 0;
             // 
             // panel6
@@ -120,9 +120,10 @@ namespace multi_launcher
             panel6.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             panel6.BackColor = Color.Gray;
             panel6.Controls.Add(button2);
-            panel6.Location = new Point(0, 40);
+            panel6.Location = new Point(0, 53);
+            panel6.Margin = new Padding(3, 4, 3, 4);
             panel6.Name = "panel6";
-            panel6.Size = new Size(836, 40);
+            panel6.Size = new Size(955, 53);
             panel6.TabIndex = 2;
             // 
             // button2
@@ -131,9 +132,10 @@ namespace multi_launcher
             button2.FlatAppearance.BorderColor = Color.Black;
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Popup;
-            button2.Location = new Point(66, 6);
+            button2.Location = new Point(75, 8);
+            button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(80, 30);
+            button2.Size = new Size(91, 40);
             button2.TabIndex = 0;
             button2.Text = "Run game";
             button2.UseVisualStyleBackColor = false;
@@ -144,47 +146,49 @@ namespace multi_launcher
             panel5.BackgroundImage = Properties.Resources._41530da57b50b445c8b914f829826947;
             panel5.BackgroundImageLayout = ImageLayout.Stretch;
             panel5.Location = new Point(0, 0);
+            panel5.Margin = new Padding(3, 4, 3, 4);
             panel5.Name = "panel5";
-            panel5.Size = new Size(836, 40);
+            panel5.Size = new Size(955, 53);
             panel5.TabIndex = 1;
             panel5.Paint += panel5_Paint;
             // 
             // panel3
             // 
             panel3.BorderStyle = BorderStyle.FixedSingle;
-            panel3.Location = new Point(12, 12);
+            panel3.Location = new Point(14, 16);
+            panel3.Margin = new Padding(3, 4, 3, 4);
             panel3.Name = "panel3";
-            panel3.Size = new Size(100, 53);
+            panel3.Size = new Size(114, 70);
             panel3.TabIndex = 3;
             // 
             // vScrollBar1
             // 
             vScrollBar1.Dock = DockStyle.Right;
-            vScrollBar1.Location = new Point(981, 0);
+            vScrollBar1.Location = new Point(1124, 0);
             vScrollBar1.Name = "vScrollBar1";
-            vScrollBar1.Size = new Size(17, 567);
+            vScrollBar1.Size = new Size(17, 756);
             vScrollBar1.TabIndex = 1;
             vScrollBar1.Scroll += vScrollBar1_Scroll;
             // 
             // panel7
             // 
             panel7.Controls.Add(panel1);
-            panel7.Location = new Point(118, 31);
+            panel7.Location = new Point(135, 41);
+            panel7.Margin = new Padding(3, 4, 3, 4);
             panel7.Name = "panel7";
-            panel7.Size = new Size(850, 530);
+            panel7.Size = new Size(971, 707);
             panel7.TabIndex = 4;
             // 
             // the_window
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(998, 567);
+            ClientSize = new Size(1141, 756);
             Controls.Add(panel7);
             Controls.Add(vScrollBar1);
             Controls.Add(panel3);
             Controls.Add(label1);
             Controls.Add(reloadbutton);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "the_window";
             Text = "the_window";
             panel1.ResumeLayout(false);
