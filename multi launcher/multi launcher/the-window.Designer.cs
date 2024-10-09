@@ -102,7 +102,7 @@ namespace multi_launcher
             panel2.Location = new Point(3, 4);
             panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(956, 106);
+            panel2.Size = new Size(955, 106);
             panel2.TabIndex = 0;
             // 
             // panel4
@@ -139,10 +139,12 @@ namespace multi_launcher
             button2.TabIndex = 0;
             button2.Text = "Run game";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // panel5
             // 
             panel5.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            panel5.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             panel5.BackgroundImage = Properties.Resources._41530da57b50b445c8b914f829826947;
             panel5.BackgroundImageLayout = ImageLayout.Stretch;
             panel5.Location = new Point(0, 0);
@@ -150,7 +152,6 @@ namespace multi_launcher
             panel5.Name = "panel5";
             panel5.Size = new Size(955, 53);
             panel5.TabIndex = 1;
-            panel5.Paint += panel5_Paint;
             // 
             // panel3
             // 

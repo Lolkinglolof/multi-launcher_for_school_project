@@ -13,7 +13,6 @@ namespace multi_launcher
     {
         public static string placeholdername()
         {
-            Directory.GetFiles(@"C:\Program Files(x86)\Steam\steamapps\common");
             DriveInfo[] drives = DriveInfo.GetDrives();
             return drives[0].Name;
         }

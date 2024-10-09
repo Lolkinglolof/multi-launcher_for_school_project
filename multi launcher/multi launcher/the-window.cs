@@ -16,6 +16,7 @@ namespace multi_launcher
     
     public partial class the_window : Form
     {
+
         int scroll;
         List<string> gamelist = new List<string>();
         
@@ -23,7 +24,7 @@ namespace multi_launcher
         {
             panel1.Invoke(() =>
             {
-                panel1.Size = new System.Drawing.Size(850, 83 * gamelist.Count);
+                panel1.Size = new System.Drawing.Size(955, 106 * gamelist.Count);
                 //MessageBox.Show("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
             });
 
@@ -31,8 +32,9 @@ namespace multi_launcher
         }
         public the_window()
         {
-            gamelist.Add("i'm telling god");
             InitializeComponent();
+            gamelist.Add("i'm telling god");
+            
             var t = new System.Timers.Timer();
             t.Interval = 10000;
             t.Elapsed += maintenence;
@@ -44,7 +46,6 @@ namespace multi_launcher
 
         private void button2_Click(object sender, EventArgs e)
         {
-
             MessageBox.Show(steam_lib.placeholdername());
         }
         private void label1_Click(object sender, EventArgs e)
@@ -56,11 +57,6 @@ namespace multi_launcher
         {
             Debug.WriteLine("reloading games");
             MessageBox.Show("reloading games");
-
-        }
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
 
         }
 
