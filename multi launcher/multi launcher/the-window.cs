@@ -178,6 +178,7 @@ namespace multi_launcher
         private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {
             vScrollBar1.Maximum =panel1.Size.Height-panel7.Size.Height;
+            vScrollBar1.Minimum =0;
             scroll = vScrollBar1.Value;
             panel1.Location = new Point(0, 0-scroll);
         }
