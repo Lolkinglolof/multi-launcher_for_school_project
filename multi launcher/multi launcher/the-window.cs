@@ -116,8 +116,12 @@ namespace multi_launcher
                 //
                 Button button = new Button();
                 button.Text = "start game";
+<<<<<<< Updated upstream
                 // temporary fix for names that doesn't match the game folder
                 for (int u = 0; u < fails.Count; u++)
+=======
+                /*for (int u=0; u<fails.Count;u++ )
+>>>>>>> Stashed changes
                 {
                     if (name == fails[u])
                     {
@@ -129,12 +133,20 @@ namespace multi_launcher
                         button.Name = name;
                         break;
                     }
+<<<<<<< Updated upstream
                 }
 
                 button.Location = new Point(213, 50);
                 panel.Controls.Add(button);
                 button.Size = new System.Drawing.Size(120, 40);
 
+=======
+                }*/
+                button.Name = name;
+
+                button.Location = new Point(213, 80);
+                
+>>>>>>> Stashed changes
                 button.BackColor = System.Drawing.Color.Green;
 
 
@@ -149,11 +161,29 @@ namespace multi_launcher
                 });
             }
         }
+<<<<<<< Updated upstream
         private EventHandler button_Click(object sender, EventArgs e, string file)
         {
             /*Process p = new Process();
             string Dir;
             if (Directory.GetDirectories(steam_lib.SteamLocator() + "/steamapps/common/",file[0]+ "*").Length ==1)
+=======
+        private EventHandler button_Click(object sender, EventArgs e,string file)
+        {
+            Process p = new Process();
+            string? game = Directory.GetFiles(steam_lib.SteamLocator() +"/steamapps/common/" + file,"*.exe").FirstOrDefault();
+            if (game == null)
+            {
+                return null;
+            }
+            if (game != null)
+            {
+                p.StartInfo.FileName = game;
+                p.Start();
+                return null;
+            }
+            /*if (Directory.GetDirectories(steam_lib.SteamLocator() + "/steamapps/common/",file[0]+ "*").Length ==1)
+>>>>>>> Stashed changes
             {
                 Dir = Directory.GetDirectories(steam_lib.SteamLocator() + "/steamapps/common/", file[0] + "*")[0];
                 p.StartInfo.FileName = Directory.GetFiles(Dir,  "*.exe")[0];
@@ -183,7 +213,10 @@ namespace multi_launcher
                 Dir = Directory.GetDirectories(steam_lib.SteamLocator() + "/steamapps/common/", file[0] + file[1] + file[2] + file[3] + file[4] + file[5] + "*")[0];
                 p.StartInfo.FileName = Directory.GetFiles(Dir," *.exe")[0];
             }*/
+<<<<<<< Updated upstream
             MessageBox.Show(file + " button clicked");
+=======
+>>>>>>> Stashed changes
             return null;
         }
 

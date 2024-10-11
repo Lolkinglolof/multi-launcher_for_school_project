@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\torbe\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|c:\\users\\torbe\\documents\\github\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\steam-lib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|solutionrelative:multi launcher\\steam-lib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|c:\\users\\torbe\\documents\\github\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\the-window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|solutionrelative:multi launcher\\the-window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|c:\\users\\torbe\\documents\\github\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\the-window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|C:\\Users\\torbe\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\the-window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|solutionrelative:multi launcher\\the-window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|c:\\users\\torbe\\documents\\github\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\steam-lib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|solutionrelative:multi launcher\\steam-lib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{42726AC2-B478-41C2-B7C6-0981ED81B479}|multi launcher\\multi launcher.csproj|c:\\users\\torbe\\documents\\github\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\the-window.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,17 +41,17 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "steam-lib.cs",
               "DocumentMoniker": "C:\\Users\\torbe\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\steam-lib.cs",
               "RelativeDocumentMoniker": "multi launcher\\steam-lib.cs",
               "ToolTip": "C:\\Users\\torbe\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\steam-lib.cs",
               "RelativeToolTip": "multi launcher\\steam-lib.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAnwCkAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAewDIAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-02T12:25:48.328Z",
               "IsPinned": true,
@@ -68,8 +68,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-02T12:26:17.319Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -82,18 +81,17 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-02T13:06:17.437Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "the-window.cs",
               "DocumentMoniker": "C:\\Users\\torbe\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\the-window.cs",
               "RelativeDocumentMoniker": "multi launcher\\the-window.cs",
               "ToolTip": "C:\\Users\\torbe\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\the-window.cs",
               "RelativeToolTip": "multi launcher\\the-window.cs",
-              "ViewState": "AgIAAKEAAAAAAAAAAAAmwLIAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAewIMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-02T13:04:35.878Z",
               "EditorCaption": ""
@@ -108,8 +106,7 @@
               "RelativeToolTip": "multi launcher\\multi launcher.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-02T15:30:32.342Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-02T15:30:32.342Z"
             },
             {
               "$type": "Document",
@@ -121,20 +118,18 @@
               "RelativeToolTip": "multi launcher\\the-window.Designer.cs",
               "ViewState": "AgIAAHgAAAAAAAAAAAAowFUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T15:56:50.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-02T15:56:50.061Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "the-window.cs [Design]",
               "DocumentMoniker": "C:\\Users\\torbe\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\the-window.cs",
               "RelativeDocumentMoniker": "multi launcher\\the-window.cs",
               "ToolTip": "C:\\Users\\torbe\\Documents\\GitHub\\multi-launcher_for_school_project\\multi launcher\\multi launcher\\the-window.cs [Design]",
               "RelativeToolTip": "multi launcher\\the-window.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T12:54:51.132Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-02T12:54:51.132Z"
             },
             {
               "$type": "Document",
@@ -146,8 +141,7 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ViewState": "AgIAAK4UAAAAAAAAAAAqwMgUAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-10-02T19:19:53.692Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-02T19:19:53.692Z"
             }
           ]
         }
