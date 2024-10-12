@@ -88,6 +88,7 @@ namespace multi_launcher
             panel1.Name = "panel1";
             panel1.Size = new Size(850, 109);
             panel1.TabIndex = 2;
+            MouseWheel += MouseWheeling;
             // 
             // panel4
             // 

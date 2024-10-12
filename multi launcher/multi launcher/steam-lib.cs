@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
-using System.Reflection.Metadata.Ecma335;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 
 namespace multi_launcher
 {
-    public class steam_lib 
+    public class steam_lib
     {
         /// <summary>
         /// 
@@ -21,11 +14,11 @@ namespace multi_launcher
             string[] ll;
             string steamloc;
             DriveInfo[] drives = DriveInfo.GetDrives();
-            for (int i = 0; i<drives.Length;i++)
+            for (int i = 0; i < drives.Length; i++)
             {
 
                 l = Directory.GetDirectories(drives[i].Name, "*(x86)");
-                
+
                 for (int j = 0; j < l.Length; j++)
                 {
                     Debug.WriteLine(l[j]);
@@ -37,18 +30,18 @@ namespace multi_launcher
                         return steamloc;
                     }
                 }
-                
+
             }
             return null;
         }
         public static string[] GameLister()
         {
             string[] gamelist;
-            gamelist =Directory.GetFiles(Directory.GetDirectories(SteamLocator(), "steamapps")[0]);
+            gamelist = Directory.GetFiles(Directory.GetDirectories(SteamLocator(), "steamapps")[0], "*mani*");
             for (int i = 0; i < gamelist.Count(); i++)
             {
                 Debug.WriteLine("manifest = " + gamelist[i]);
-                Debug.WriteLine("manifest = " + Gamenamer(gamelist[i],"name"));
+                Debug.WriteLine("manifest = " + Gamenamer(gamelist[i], "name"));
             }
             return gamelist;
         }
@@ -58,10 +51,10 @@ namespace multi_launcher
             string? gamename = Name?.Replace("\"" + info + "\"", string.Empty)?.Trim()?.Trim('"');
             return gamename ?? "Unkown";
         }
-        public static string imagefinder(string id,string type)
+        public static string imagefinder(string id, string type)
         {
             string sl = SteamLocator();
-            string? image = Directory.GetFiles(sl + '/' + "appcache/librarycache", id+'*'+type+'*').FirstOrDefault();
+            string? image = Directory.GetFiles(sl + '/' + "appcache/librarycache", id + '*' + type + '*').FirstOrDefault();
             return image ?? ".\\shit_yourself.png";
         }
     }
