@@ -1,1 +1,2 @@
 tilføj "Uninstall" til listen over exceptions i exe fil listen
+check war of omens for fejl
