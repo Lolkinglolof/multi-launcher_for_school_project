@@ -1,5 +1,4 @@
 ﻿using System.Diagnostics;
-using System.Timers;
 namespace multi_launcher
 {
 
@@ -284,7 +283,7 @@ namespace multi_launcher
             string game = (string)btn.Tag;
             string id = (string)btn.Name;
             Process p = new Process();
-            
+
             p.StartInfo.FileName = game;
             p.Start();
         }
@@ -337,24 +336,16 @@ namespace multi_launcher
             // fix crash on scroll, check math before applying
             int linemove = e.Delta * SystemInformation.MouseWheelScrollLines / 120;
             int pixmove = linemove * 20;
-            panel1.Location = new Point(0, panel1.Location.Y + pixmove);
-            if (panel1.Location.Y > 0)
+            if (-panel1.Location.Y >= vScrollBar1.Minimum && -panel1.Location.Y <= vScrollBar1.Maximum)
             {
-                panel1.Location = new Point(0, 0);
-            }
-            if (panel1.Location.Y < -panel1.Height + panel7.Height)
-            {
-                panel1.Location = new Point(0, 0);
-            }
-            if (-panel1.Location.Y < vScrollBar1.Minimum || -panel1.Location.Y > vScrollBar1.Maximum)
-            {
+                if (panel1.Location.Y + pixmove !> 0 && panel1.Location.Y + pixmove !< panel1.Height-panel7.Height)
+                {
+                    panel1.Location = new Point(0, panel1.Location.Y + pixmove);
+                    //vScrollBar1.Value = -panel1.Location.Y;
+                }
+                
                 
             }
-            else
-            {
-                vScrollBar1.Value = -panel1.Location.Y;
-            }
-            
         }
     }
 }
