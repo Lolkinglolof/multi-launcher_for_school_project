@@ -102,7 +102,7 @@ namespace multi_launcher
                     filelist.Add(f[c]);
                 }
                 //begins the filtering of all unnessecery .exe files
-                for (int c = filelist.Count; c > 0; c++)
+                for (int c = filelist.Count; c > 0; c--)
                 {
                     if (filelist.Count == 1)
                     {
