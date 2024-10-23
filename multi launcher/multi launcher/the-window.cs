@@ -1,6 +1,5 @@
 ﻿using System.Diagnostics;
 using System.Timers;
-
 namespace multi_launcher
 {
 
@@ -256,7 +255,7 @@ namespace multi_launcher
                 button.Location = new Point(213, 50);
                 panel.Controls.Add(button);
                 button.Size = new System.Drawing.Size(120, 40);
-                button.Name = name;
+                button.Name = id;
                 button.Tag = game;
                 button.Location = new Point(213, 50);
                 button.BackColor = System.Drawing.Color.Green;
@@ -283,7 +282,9 @@ namespace multi_launcher
         {
             var btn = (Button)sender;
             string game = (string)btn.Tag;
+            string id = (string)btn.Name;
             Process p = new Process();
+            
             p.StartInfo.FileName = game;
             p.Start();
         }
@@ -345,7 +346,15 @@ namespace multi_launcher
             {
                 panel1.Location = new Point(0, -panel1.Height + panel7.Height);
             }
-            vScrollBar1.Value = -panel1.Location.Y;
+            if (-panel1.Location.Y < vScrollBar1.Minimum || -panel1.Location.Y > vScrollBar1.Maximum)
+            {
+                vScrollBar1.Value = 0;
+            }
+            else
+            {
+                vScrollBar1.Value = -panel1.Location.Y;
+            }
+            
         }
     }
 }
