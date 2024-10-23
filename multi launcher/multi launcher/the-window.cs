@@ -344,11 +344,11 @@ namespace multi_launcher
             }
             if (panel1.Location.Y < -panel1.Height + panel7.Height)
             {
-                panel1.Location = new Point(0, -panel1.Height + panel7.Height);
+                panel1.Location = new Point(0, 0);
             }
             if (-panel1.Location.Y < vScrollBar1.Minimum || -panel1.Location.Y > vScrollBar1.Maximum)
             {
-                vScrollBar1.Value = 0;
+                
             }
             else
             {
