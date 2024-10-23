@@ -102,7 +102,7 @@ namespace multi_launcher
                     filelist.Add(f[c]);
                 }
                 //begins the filtering of all unnessecery .exe files
-                for (int c = 0; c < filelist.Count; c++)
+                for (int c = filelist.Count; c > 0; c++)
                 {
                     if (filelist.Count == 1)
                     {
@@ -224,7 +224,7 @@ namespace multi_launcher
                 panel1.Controls.Add(panel);
                 panel.Size = new System.Drawing.Size(950, 106);
                 panel.Location = new Point(0, 106 * gamelist.Count);
-                panel.BackColor = System.Drawing.Color.Gray;
+                panel.BackColor = System.Drawing.Color.DarkBlue;
                 //
                 //creation of the picture on the game banner
                 //
@@ -241,7 +241,7 @@ namespace multi_launcher
                 TextBox gamename = new TextBox();
                 gamename.Text = name;
                 panel.Controls.Add(gamename);
-                gamename.BackColor = System.Drawing.Color.Gray;
+                gamename.BackColor = System.Drawing.Color.DarkBlue;
                 gamename.BorderStyle = BorderStyle.None;
                 gamename.ForeColor = System.Drawing.Color.White;
                 gamename.Size = new System.Drawing.Size(1000, 30);
