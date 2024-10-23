@@ -197,6 +197,14 @@ namespace multi_launcher
                     {
                         continue;
                     }
+                    if (filelist[c].Contains("Uninstall"))
+                    {
+                        continue;
+                    }
+                    if (filelist[c].Contains("Adobe"))
+                    {
+                        continue;
+                    }
                     else
                     {
                         game = filelist[c];
