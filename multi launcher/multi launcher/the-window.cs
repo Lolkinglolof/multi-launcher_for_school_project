@@ -333,6 +333,7 @@ namespace multi_launcher
 
         private void MouseWheeling(object? sender, MouseEventArgs e)
         {
+            // fix crash on scroll, check math before applying
             int linemove = e.Delta * SystemInformation.MouseWheelScrollLines / 120;
             int pixmove = linemove * 20;
             panel1.Location = new Point(0, panel1.Location.Y + pixmove);

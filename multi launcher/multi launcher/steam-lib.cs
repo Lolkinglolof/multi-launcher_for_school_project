@@ -30,6 +30,15 @@ namespace multi_launcher
                         return steamloc;
                     }
                 }
+                if (Directory.GetDirectories(drives[i].Name, "steam").Length == 1)
+                {
+                    for (int j = 0; j < Directory.GetDirectories(drives[i].Name, "steam").Length; j++)
+                    {
+                        steamloc = Directory.GetDirectories(drives[i].Name, "steam")[1];
+                        return steamloc;
+                    }
+                }
+                // possibly take another popular place later
 
             }
             return null;
