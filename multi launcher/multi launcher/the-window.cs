@@ -204,6 +204,10 @@ namespace multi_launcher
                     {
                         continue;
                     }
+                    if (filelist[c].Contains("Unins"))
+                    {
+                        continue;
+                    }
                     else
                     {
                         game = filelist[c];
@@ -285,7 +289,8 @@ namespace multi_launcher
             string id = (string)btn.Name;
             Process p = new Process();
             
-            p.StartInfo.FileName = game;
+            p.StartInfo.FileName = "steam://rungameid/"+id;
+            p.StartInfo.UseShellExecute = true;
             p.Start();
         }
 
