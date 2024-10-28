@@ -28,10 +28,10 @@ namespace multi_launcher
 
                 //catching name, installdir and id of the steam games
                 string name = steam_lib.Gamenamer(games[i], "name");
-                string installdir = steam_lib.Gamenamer(games[i], "installdir");
+                //string installdir = steam_lib.Gamenamer(games[i], "installdir");
                 string id = steam_lib.Gamenamer(games[i], "appid");
                 // filters non game apps out
-                if (name == "Steamworks Common Redistributables")
+                /*if (name == "Steamworks Common Redistributables")
                 {
                     continue;
                 }
@@ -218,7 +218,7 @@ namespace multi_launcher
                 if (game == "")
                 {
                     continue;
-                }
+                }*/
                 //
                 //the panel where all game relevant things should be on
                 //
@@ -260,17 +260,11 @@ namespace multi_launcher
                 panel.Controls.Add(button);
                 button.Size = new System.Drawing.Size(120, 40);
                 button.Name = id;
-                button.Tag = game;
                 button.Location = new Point(213, 50);
                 button.BackColor = System.Drawing.Color.Green;
                 button.MouseClick += button_Click;
 
                 gamelist.Add(name);
-
-                vScrollBar1.Maximum = panel1.Size.Height - panel7.Size.Height;
-                vScrollBar1.Minimum = 0;
-
-
             }
             panel1.Invoke(() =>
             {
@@ -364,8 +358,17 @@ namespace multi_launcher
             }
             else
             {
-                panel1.Location = new Point(0, panel1.Location.Y + pixmove);
-                vScrollBar1.Value = -panel1.Location.Y;
+                if (panel1.Height - panel7.Height < 0)
+                {
+                    panel1.Location = new Point(0, 0);
+                    vScrollBar1.Value = -panel1.Location.Y;
+                }
+                else
+                {
+                    panel1.Location = new Point(0, panel1.Location.Y + pixmove);
+                    vScrollBar1.Value = -panel1.Location.Y;
+                }
+                
             }
             
         }
