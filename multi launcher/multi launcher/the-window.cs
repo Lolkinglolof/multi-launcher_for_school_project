@@ -31,7 +31,8 @@ namespace multi_launcher
                 //string installdir = steam_lib.Gamenamer(games[i], "installdir");
                 string id = steam_lib.Gamenamer(games[i], "appid");
                 // filters non game apps out
-                /*if (name == "Steamworks Common Redistributables")
+
+                if (name == "Steamworks Common Redistributables")
                 {
                     continue;
                 }
@@ -39,7 +40,11 @@ namespace multi_launcher
                 {
                     continue;
                 }
-                string game = "";
+                if (name.Contains("SDK"))
+                {
+                    continue;
+                }
+                /*string game = "";
 
                 List<string> filelist = new List<string>();
                 string[] f = Directory.GetFiles(steam_lib.SteamLocator() + "/steamapps/common/" + installdir, "*.exe");
@@ -287,39 +292,6 @@ namespace multi_launcher
             p.StartInfo.UseShellExecute = true;
             p.Start();
         }
-
-
-
-        /*if (Directory.GetDirectories(steam_lib.SteamLocator() + "/steamapps/common/",file[0]+ "*").Length ==1)
-        {
-            Dir = Directory.GetDirectories(steam_lib.SteamLocator() + "/steamapps/common/", file[0] + "*")[0];
-            p.StartInfo.FileName = Directory.GetFiles(Dir,  "*.exe")[0];
-        }
-        else if(Directory.GetDirectories(steam_lib.SteamLocator() + "/steamapps/common/",file[0]+file[1]+"*").Length ==1)
-        {
-            Dir = Directory.GetDirectories(steam_lib.SteamLocator() + "/steamapps/common/", file[0] + file[1] + "*")[0];
-            p.StartInfo.FileName = Directory.GetFiles(Dir,"*.exe")[0];
-        }
-        else if (Directory.GetDirectories(steam_lib.SteamLocator() + "/steamapps/common/",file[0] + file[1] + file[2]+ "*").Length ==1)
-        {
-            Dir = Directory.GetDirectories(steam_lib.SteamLocator() + "/steamapps/common/", file[0] + file[1] + file[2] + "*")[0];
-            p.StartInfo.FileName = Directory.GetFiles(Dir," *.exe")[0];
-        }
-        else if (Directory.GetDirectories(steam_lib.SteamLocator() + "/steamapps/common/", file[0] + file[1] + file[2] + file[3]+"*").Length ==1)
-        {
-            Dir = Directory.GetDirectories(steam_lib.SteamLocator() + "/steamapps/common/", file[0] + file[1] + file[2] + file[3] + "*")[0];
-            p.StartInfo.FileName = Directory.GetFiles(Dir, "*.exe")[0];
-        }
-        else if (Directory.GetDirectories(steam_lib.SteamLocator() + "/steamapps/common/", file[0] + file[1] + file[2] + file[3] + file[4]+"*").Length ==1)
-        {
-            Dir = Directory.GetDirectories(steam_lib.SteamLocator() + "/steamapps/common/", file[0] + file[1] + file[2] + file[3] + file[4] + "*")[0];
-            p.StartInfo.FileName = Directory.GetFiles(Dir, " *.exe")[0];
-        }
-        else
-        {
-            Dir = Directory.GetDirectories(steam_lib.SteamLocator() + "/steamapps/common/", file[0] + file[1] + file[2] + file[3] + file[4] + file[5] + "*")[0];
-            p.StartInfo.FileName = Directory.GetFiles(Dir," *.exe")[0];
-        }*/
 
         private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {

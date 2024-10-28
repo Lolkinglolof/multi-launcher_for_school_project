@@ -66,5 +66,7 @@ namespace multi_launcher
             string? image = Directory.GetFiles(sl + '/' + "appcache/librarycache", id + '*' + type + '*').FirstOrDefault();
             return image ?? ".\\shit_yourself.png";
         }
+        
+        
     }
 }
