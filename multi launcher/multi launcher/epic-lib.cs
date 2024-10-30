@@ -1,5 +1,4 @@
-﻿using System.Diagnostics;
-using System.Text.Json;
+﻿using System.Text.Json;
 namespace multi_launcher
 {
 
@@ -12,7 +11,7 @@ namespace multi_launcher
         private string[] ManifestFiles()
         {
             return Directory.GetFiles(@"C:\ProgramData\Epic\EpicGamesLauncher\Data\Manifests", "*.item");
-    }
+        }
         private string Games()
         {
             // Tjekker om manifest-mappen eksisterer
@@ -52,41 +51,18 @@ namespace multi_launcher
             return null;
 
         }
-                
-}
-                
 
-        private void CreateShortcut(string gameName, JsonDocument manifestJson)
-{
-    try
+    }
+
+
+    private string Path(string gameName, JsonDocument manifestJson)
     {
         if (manifestJson.RootElement.TryGetProperty("LaunchExecutable", out var executablePath))
         {
             string targetPath = executablePath.GetString();
-
-                // Bestemmer hvor genvejen skal placeres (f.eks. i launcher spilmappen)
-                /*string shortcutLocation = Path.Combine(Application.StartupPath, "Shortcuts", gameName + ".lnk");
-
-                // Brug WshShell til at oprette genvejen
-                WshShell shell = new WshShell();
-
-                IWshShortcut shortcut = (IWshShortcut)shell.CreateShortcut(shortcutLocation);
-                shortcut.Description = "Shortcut for " + gameName;
-                shortcut.TargetPath = targetPath;
-                shortcut.Save();*/
-                Process game = new Process();
-                game.StartInfo.FileName = targetPath;
-                game.StartInfo.UseShellExecute = true;
-                game.Start();
-
-            }
+            return targetPath;
         }
-    catch (Exception ex)
-    {
-        MessageBox.Show($"Error creating shortcut for {gameName}. Details: {ex.Message}");
-    }
-}
-
+        return null;
     }
 }
 
