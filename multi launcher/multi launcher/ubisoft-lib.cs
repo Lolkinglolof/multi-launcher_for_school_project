@@ -3,6 +3,7 @@ using System.IO;
 using System.Text.Json;
 using System.Windows.Forms;
 using System;
+using multi_launcher;
 
 public class Ubisoft_Lib
 {
@@ -47,7 +48,7 @@ public class Ubisoft_Lib
         return string.Empty;
     }
 
-    /*public List<GameInfo> LoadInstalledGames()
+    public List<GameInfo> LoadInstalledGames()
     {
         List<GameInfo> installedGames = new List<GameInfo>();
 
@@ -81,7 +82,7 @@ public class Ubisoft_Lib
 
                     if (!string.IsNullOrEmpty(installDirStr) && Directory.Exists(installDirStr))
                     {
-                        //installedGames.Add(new GameInfo { Name = gameNameStr, InstallDir = installDirStr });
+                        installedGames.Add(new GameInfo { Name = gameNameStr, InstallDir = installDirStr });
 
                     }
                     else
@@ -101,5 +102,15 @@ public class Ubisoft_Lib
         }
 
         return installedGames;
-    }*/
+    }
+    public class GameInfo
+    {
+        public string Name { get; set; }
+        public string InstallDir { get; set; }
+
+        public override string ToString()
+        {
+            return Name;
+        }
+    }
 }
