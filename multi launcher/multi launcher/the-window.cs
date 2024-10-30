@@ -22,14 +22,14 @@ namespace multi_launcher
             this.panel1.Controls.Clear();
             gamelist.Clear();
             // catching the game manifests
-            string[] games = steam_lib.GameLister();
+            string[] games = Steam.GameLister();
             for (int i = 0; i < games.Length; i++)
             {
 
-                //catching name, installdir and id of the steam games
-                string name = steam_lib.Gamenamer(games[i], "name");
-                //string installdir = steam_lib.Gamenamer(games[i], "installdir");
-                string id = steam_lib.Gamenamer(games[i], "appid");
+                //catching name, installdir and id of the Steam games
+                string name = Steam.Gamenamer(games[i], "name");
+                //string installdir = Steam.Gamenamer(games[i], "installdir");
+                string id = Steam.Gamenamer(games[i], "appid");
                 // filters non game apps out
 
                 if (name == "Steamworks Common Redistributables")
@@ -47,12 +47,12 @@ namespace multi_launcher
                 /*string game = "";
 
                 List<string> filelist = new List<string>();
-                string[] f = Directory.GetFiles(steam_lib.SteamLocator() + "/steamapps/common/" + installdir, "*.exe");
+                string[] f = Directory.GetFiles(Steam.SteamLocator() + "/Steamapps/common/" + installdir, "*.exe");
                 string[] ff;
                 string[] fff;
                 string[] ffff;
                 string[] fffff;
-                string[] l = Directory.GetDirectories(steam_lib.SteamLocator() + "/steamapps/common/" + installdir);
+                string[] l = Directory.GetDirectories(Steam.SteamLocator() + "/Steamapps/common/" + installdir);
                 // begins finding the .exe files
                 // checks all directory in game folder
                 for (int a = 0; a < l.Length; a++)
@@ -242,7 +242,7 @@ namespace multi_launcher
                 icon.Size = new System.Drawing.Size(206, 106);
                 icon.Location = new Point(0, 0);
                 icon.SizeMode = PictureBoxSizeMode.Zoom;
-                icon.Image = Image.FromFile(steam_lib.imagefinder(id, "header"));
+                icon.Image = Image.FromFile(Steam.imagefinder(id, "header"));
                 //
                 //creation of the text for the game name
                 //
@@ -284,11 +284,11 @@ namespace multi_launcher
         private void button_Click(object? sender, EventArgs e)
         {
             var btn = (Button)sender;
-            string game = (string)btn.Tag;
+            //string game = (string)btn.Tag;
             string id = (string)btn.Name;
             Process p = new Process();
             
-            p.StartInfo.FileName = "steam://rungameid/"+id;
+            p.StartInfo.FileName = "Steam://rungameid/"+id;
             p.StartInfo.UseShellExecute = true;
             p.Start();
         }

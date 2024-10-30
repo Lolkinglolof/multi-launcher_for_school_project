@@ -2,17 +2,17 @@
 
 namespace multi_launcher
 {
-    public class steam_lib
+    public class Steam
     {
         /// <summary>
         /// 
         /// </summary>
-        /// <returns a list of things the first is the location of steam and any subsequent are libraries>
+        /// <returns a list of things the first is the location of Steam and any subsequent are libraries>
         public static string SteamLocator()
         {
             string[] l;
             string[] ll;
-            string steamloc;
+            string Steamloc;
             DriveInfo[] drives = DriveInfo.GetDrives();
             for (int i = 0; i < drives.Length; i++)
             {
@@ -26,16 +26,16 @@ namespace multi_launcher
                     for (int k = 0; k < ll.Length; k++)
                     {
                         Debug.WriteLine(ll[k]);
-                        steamloc = ll[k];
-                        return steamloc;
+                        Steamloc = ll[k];
+                        return Steamloc;
                     }
                 }
                 if (Directory.GetDirectories(drives[i].Name, "steam").Length == 1)
                 {
                     for (int j = 0; j < Directory.GetDirectories(drives[i].Name, "steam").Length; j++)
                     {
-                        steamloc = Directory.GetDirectories(drives[i].Name, "steam")[1];
-                        return steamloc;
+                        Steamloc = Directory.GetDirectories(drives[i].Name, "steam")[1];
+                        return Steamloc;
                     }
                 }
                 // possibly take another popular place later
