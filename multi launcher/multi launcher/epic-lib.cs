@@ -8,28 +8,25 @@ namespace multi_launcher
         private static readonly string EpicGamesManifestPath = @"C:\ProgramData\Epic\EpicGamesLauncher\Data\Manifests";
 
         //private ListBox listBoxGames;
-        private string[] ManifestFiles()
-        {
-            return Directory.GetFiles(@"C:\ProgramData\Epic\EpicGamesLauncher\Data\Manifests", "*.item");
-        }
-        private string Games()
+        private string[] ManiFiles()
         {
             // Tjekker om manifest-mappen eksisterer
-            if (!Directory.Exists(EpicGamesManifestPath))
+            if (!Directory.Exists(@"C:\ProgramData\Epic\EpicGamesLauncher\Data\Manifests"))
             {
                 //MessageBox.Show("Epic Games manifest folder not found.");
                 return null;
             }
             // Henter alle .item filer fra manifest
-            string[] manifestFiles = Directory.GetFiles(EpicGamesManifestPath, "*.item");
+            string[] manifestFiles = Directory.GetFiles(@"C:\ProgramData\Epic\EpicGamesLauncher\Data\Manifests", "*.item");
 
             if (manifestFiles.Length == 0)
             {
                 //MessageBox.Show("No installed games found");
                 return null;
             }
+            return manifestFiles;
         }
-        private string GameInfo(string file)
+        private string GameName(string file)
         {
             // Læser indholdet af manifestfilen
             string manifestContent = System.IO.File.ReadAllText(file);
@@ -51,19 +48,19 @@ namespace multi_launcher
             return null;
 
         }
-
-    }
-
-
-    private string Path(string gameName, JsonDocument manifestJson)
-    {
-        if (manifestJson.RootElement.TryGetProperty("LaunchExecutable", out var executablePath))
+        private string GamePath(string gameName, JsonDocument manifestJson)
         {
-            string targetPath = executablePath.GetString();
-            return targetPath;
+            if (manifestJson.RootElement.TryGetProperty("LaunchExecutable", out var executablePath))
+            {
+                string targetPath = executablePath.GetString();
+                return targetPath;
+            }
+            return null;
         }
-        return null;
     }
+
+
+
 }
 
 
