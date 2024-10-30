@@ -1,1 +1,1 @@
-find en løsning til <GameInfo> listen i ubisoft_lib (alle referencer er kommenteret på nuværende tidspunkt)
+integrate ubisoft_lib
