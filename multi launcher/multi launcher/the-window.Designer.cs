@@ -5,12 +5,12 @@
 //
 namespace multi_launcher
 {
-    partial class the_window
+     public partial class the_window
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        public System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -31,7 +31,7 @@ namespace multi_launcher
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(the_window));
@@ -170,17 +170,17 @@ namespace multi_launcher
 
         #endregion
 
-        private Button reloadbutton;
-        private Label label1;
-        private ImageList imageList1;
-        private Panel panel1;
-        private Panel panel5;
-        private Panel panel4;
-        private Panel panel3;
-        private Panel panel6;
-        private Button button2;
-        private VScrollBar vScrollBar1;
-        private Panel panel7;
-        private Label label2;
+        public Button reloadbutton;
+        public Label label1;
+        public ImageList imageList1;
+        public Panel panel1;
+        public Panel panel5;
+        public Panel panel4;
+        public Panel panel3;
+        public Panel panel6;
+        public Button button2;
+        public VScrollBar vScrollBar1;
+        public Panel panel7;
+        public Label label2;
     }
 }

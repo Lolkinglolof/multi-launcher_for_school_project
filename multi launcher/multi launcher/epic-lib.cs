@@ -5,11 +5,12 @@ namespace multi_launcher
     public class Epic
     {
         // Stedet hvor Epic Games manifesterne ligger
-        private static readonly string EpicGamesManifestPath = @"C:\ProgramData\Epic\EpicGamesLauncher\Data\Manifests";
+        public static readonly string EpicGamesManifestPath = @"C:\ProgramData\Epic\EpicGamesLauncher\Data\Manifests";
 
-        //private ListBox listBoxGames;
-        private string[] ManiFiles()
+        //public ListBox listBoxGames;
+        public static string[] ManiFiles()
         {
+            //List<string> manifestFiles = ["idk?"];
             // Tjekker om manifest-mappen eksisterer
             if (!Directory.Exists(@"C:\ProgramData\Epic\EpicGamesLauncher\Data\Manifests"))
             {
@@ -17,7 +18,13 @@ namespace multi_launcher
                 return null;
             }
             // Henter alle .item filer fra manifest
+            //manifestFiles.Clear();
             string[] manifestFiles = Directory.GetFiles(@"C:\ProgramData\Epic\EpicGamesLauncher\Data\Manifests", "*.item");
+            /*foreach (string file in files)
+            {
+                manifestFiles.Add(file);
+            }*/
+            
 
             if (manifestFiles.Length == 0)
             {
@@ -26,7 +33,7 @@ namespace multi_launcher
             }
             return manifestFiles;
         }
-        private string GameName(string file)
+        public static string GameName(string file)
         {
             // Læser indholdet af manifestfilen
             string manifestContent = System.IO.File.ReadAllText(file);
@@ -39,17 +46,13 @@ namespace multi_launcher
             {
                 string gameNameStr = gameName.GetString();
                 return gameNameStr;
-                //listBoxGames.Items.Add(gameNameStr);
-
-                // Opretter en genvej til spillet
-                // denne linje åbner manifesten op, fix det.
-                //CreateShortcut(gameNameStr, manifestJson);
             }
             return null;
 
         }
-        private string GamePath(string gameName, JsonDocument manifestJson)
+        public static string GamePath(string file)
         {
+            var manifestJson = JsonDocument.Parse(file);
             if (manifestJson.RootElement.TryGetProperty("LaunchExecutable", out var executablePath))
             {
                 string targetPath = executablePath.GetString();
