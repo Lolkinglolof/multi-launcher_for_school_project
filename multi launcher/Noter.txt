@@ -1,2 +1,1 @@
-tilføj "Uninstall" til listen over exceptions i exe fil listen
-check war of omens for fejl
+find en løsning til <GameInfo> listen i ubisoft_lib (alle referencer er kommenteret på nuværende tidspunkt)
