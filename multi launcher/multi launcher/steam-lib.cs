@@ -63,6 +63,7 @@ namespace multi_launcher
         public static string imagefinder(string id, string type)
         {
             string sl = SteamLocator();
+            Debug.WriteLine(sl + "/appcache/librarycache");
             string? image = Directory.GetFiles(sl + '/' + "appcache/librarycache", id + '*' + type + '*').FirstOrDefault();
             return image ?? ".\\shit_yourself.png";
         }

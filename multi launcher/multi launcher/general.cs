@@ -44,7 +44,7 @@ namespace multi_launcher
                     string name = Epic.GameName(epicgames[i]);
                     string id = Epic.GamePath(epicgames[i]);
 
-                    GamePanelCreator(id, gamelist, parentcontrol, name, Steam.imagefinder(id, "header"), "epic");
+                    GamePanelCreator(id, gamelist, parentcontrol, name,null, "epic");
                     gamelist.Add(name);
                 }
 
@@ -71,7 +71,7 @@ namespace multi_launcher
 
 
         }
-        private static void GamePanelCreator(string id, List<string> gamelist, Control parentcontrol, string name, string header, string launcher)
+        private static void GamePanelCreator(string id, List<string> gamelist, Control parentcontrol, string name, string? header, string launcher)
         {
             //
             //the panel where all game relevant things should be on
