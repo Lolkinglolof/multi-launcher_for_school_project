@@ -1,4 +1,7 @@
-﻿using System.Text.Json;
+﻿using System.Reflection.Metadata.Ecma335;
+using System.Text.Json;
+
+
 namespace multi_launcher
 {
 
@@ -50,20 +53,24 @@ namespace multi_launcher
             return null;
 
         }
-        public static string GamePath(string file)
+        public static string GamePath(string file) 
         {
-            var manifestJson = JsonDocument.Parse(file);
-            if (manifestJson.RootElement.TryGetProperty("LaunchExecutable", out var executablePath))
+            // Læser indholdet af manifestfilen
+            string manifestContent = File.ReadAllText(file);
+
+            // Parser manifestfilen for at få spildetaljer ved hjælp af JSON
+            var manifestJson = JsonDocument.Parse(manifestContent);
+
+            // Indsamler spillets navn
+            if (manifestJson.RootElement.TryGetProperty("LaunchExecutable", out var gameName))
             {
-                string targetPath = executablePath.GetString();
-                return targetPath;
+                string gameNameStr = gameName.GetString();
+                return gameNameStr;
             }
             return null;
         }
+        
     }
-
-
-
 }
 
 
