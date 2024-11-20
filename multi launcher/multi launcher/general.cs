@@ -44,7 +44,7 @@ namespace multi_launcher
                     string name = Epic.GameName(epicgames[i]);
                     string id = Epic.GamePath(epicgames[i]);
 
-                    GamePanelCreator(id, gamelist, parentcontrol, name,null, "epic");
+                    GamePanelCreator(id, gamelist, parentcontrol, name,Epic.imagefinder(id, "header"), "epic");
                     gamelist.Add(name);
                 }
 

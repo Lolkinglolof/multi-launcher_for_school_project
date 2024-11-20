@@ -1,4 +1,5 @@
-﻿using System.Reflection.Metadata.Ecma335;
+﻿using System.Diagnostics;
+using System.Reflection.Metadata.Ecma335;
 using System.Text.Json;
 
 
@@ -69,7 +70,19 @@ namespace multi_launcher
             }
             return null;
         }
+        public static string imagefinder(string id, string type) // nyt
+        {
+            string? image = null;
+
+      /*
+            string sl = ();
+            Debug.WriteLine(sl + "/appcache/librarycache");
+            string? image = Directory.GetFiles(sl + '/' + "appcache/librarycache", id + '*' + type + '*').FirstOrDefault();¨*/
+            return image ?? ".\\shit_yourself.png";
+            
         
+        }
+
     }
 }
 
