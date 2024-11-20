@@ -107,12 +107,20 @@ namespace multi_launcher
         }
         public static string imagefinder(string name) // nyt
         {
-            string? image = null;
-
-      
             string el = EpicLocator();
+            string? image = null;
+            string[]? imagetest = Directory.GetFiles(el + "\\Launcher\\Portal\\SysFiles", "*" + name + "*" + ".png");
+
+            foreach (string img in imagetest)
+            {
+                if (img.ToLower().Contains("giveaway"))
+                {
+                    continue;
+                }
+                image = img;
+            }
+
             Debug.WriteLine(el + "\\Launcher\\Portal\\SysFiles");
-            image = Directory.GetFiles(el + "\\Launcher\\Portal\\SysFiles","*"+name + "*" + ".png").FirstOrDefault();
             return image ?? ".\\shit_yourself.png";
             
         
