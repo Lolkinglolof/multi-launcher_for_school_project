@@ -98,7 +98,7 @@ namespace multi_launcher
             TextBox gamename = new TextBox();
             gamename.Text = name;
             panel.Controls.Add(gamename);
-            gamename.BackColor = ColorTranslator.FromHtml("#303030"); ;
+            gamename.BackColor = ColorTranslator.FromHtml("#303030");
             gamename.BorderStyle = BorderStyle.None;
             gamename.ForeColor = Color.White;
             gamename.Size = new Size(1000, 30);
