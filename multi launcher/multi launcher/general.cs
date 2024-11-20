@@ -79,16 +79,16 @@ namespace multi_launcher
             Panel panel = new Panel();
             panel.Name = "1panel" + id;
             parentcontrol.Controls.Add(panel);
-            panel.Size = new System.Drawing.Size(950, 106);
+            panel.Size = new Size(950, 106);
             panel.Location = new Point(0, 106 * gamelist.Count);
-            panel.BackColor = System.Drawing.Color.DarkBlue;
+            panel.BackColor = Color.DarkBlue;
             //
             //creation of the picture on the game banner
             //
             PictureBox icon = new PictureBox();
             icon.Name = "iconpanel" + id;
             panel.Controls.Add(icon);
-            icon.Size = new System.Drawing.Size(206, 106);
+            icon.Size = new Size(206, 106);
             icon.Location = new Point(0, 0);
             icon.SizeMode = PictureBoxSizeMode.Zoom;
             icon.Image = Image.FromFile(header);
@@ -98,10 +98,10 @@ namespace multi_launcher
             TextBox gamename = new TextBox();
             gamename.Text = name;
             panel.Controls.Add(gamename);
-            gamename.BackColor = System.Drawing.Color.DarkBlue;
+            gamename.BackColor = Color.DarkBlue;
             gamename.BorderStyle = BorderStyle.None;
-            gamename.ForeColor = System.Drawing.Color.White;
-            gamename.Size = new System.Drawing.Size(1000, 30);
+            gamename.ForeColor = Color.White;
+            gamename.Size = new Size(1000, 30);
             gamename.Font = new Font(TextBox.DefaultFont.FontFamily, 20);
             gamename.Location = new Point(213, 5);
             gamename.ReadOnly = true;
@@ -109,14 +109,16 @@ namespace multi_launcher
             //creation of the play button
             //
             Button button = new Button();
-            button.Text = "start game";
+            button.Text = "START GAME";
+            button.Font = new Font(button.Font, FontStyle.Bold);
+            button.ForeColor = Color.White;
             button.Location = new Point(213, 50);
             panel.Controls.Add(button);
-            button.Size = new System.Drawing.Size(120, 40);
+            button.Size = new Size(120, 40);
             button.Name = id;
             button.Tag = launcher;
             button.Location = new Point(213, 50);
-            button.BackColor = System.Drawing.Color.Green;
+            button.BackColor = Color.Green;
             button.MouseClick += button_Click;
         }
     }
