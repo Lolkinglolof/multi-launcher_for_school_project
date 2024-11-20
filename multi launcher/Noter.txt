@@ -1,2 +1,6 @@
 integrate ubisoft_lib
 scrolling is still a bit broken. this is maybe(?) because it is tied to the scrollbar, which is broken. Either way, it doesn't properly register when the bottom of the panel is reached, and sometimes stops too early, or too late.
+
+catalogitemid useful for epic integration
+check for similarities in other games
+find the correct format for quick launching epic games games
