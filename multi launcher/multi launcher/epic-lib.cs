@@ -89,19 +89,19 @@ namespace multi_launcher
             return null;
 
         }
-        public static string GamePath(string file) 
+        public static string GameInfo(string manifestfile, string Infotype) 
         {
             // Læser indholdet af manifestfilen
-            string manifestContent = File.ReadAllText(file);
+            string manifestContent = File.ReadAllText(manifestfile);
 
             // Parser manifestfilen for at få spildetaljer ved hjælp af JSON
             var manifestJson = JsonDocument.Parse(manifestContent);
 
             // Indsamler spillets navn
-            if (manifestJson.RootElement.TryGetProperty("LaunchExecutable", out var gameName))
+            if (manifestJson.RootElement.TryGetProperty(Infotype, out var gameinfo))
             {
-                string gameNameStr = gameName.GetString();
-                return gameNameStr;
+                string gameinfoStr = gameinfo.GetString();
+                return gameinfoStr;
             }
             return null;
         }

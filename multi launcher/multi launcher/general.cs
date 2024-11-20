@@ -43,8 +43,9 @@ namespace multi_launcher
                 for (int i = 0; i < epicgames.Length; i++)
                 {
                     string name = Epic.GameName(epicgames[i]);
-                    string id = Epic.GamePath(epicgames[i]);
-
+                    string id = Epic.GameInfo(epicgames[i], "DisplayName");
+                    if (name.ToLower().Contains("unrealengine"))
+                        continue;
                     GamePanelCreator(id, gamelist, parentcontrol, name,Epic.imagefinder(name), "epic");
                     gamelist.Add(name);
                 }
