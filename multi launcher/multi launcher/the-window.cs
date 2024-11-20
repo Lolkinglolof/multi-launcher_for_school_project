@@ -13,12 +13,14 @@
         {
             InitializeComponent();
             general.ReloadGames(panel1);
+            scrollbaradjust(this.vScrollBar1, panel1, panel7);
             this.MinimumSize = new Size(1160, 300);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             general.ReloadGames(panel1);
+            scrollbaradjust(this.vScrollBar1, panel1, panel7);
         }
         private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {
@@ -27,6 +29,18 @@
             vScrollBar1.Value = -panel1.Location.Y;
             panel1.Location = new Point(0, 0 - scroll);
 
+        }
+        public static void scrollbaradjust(VScrollBar scrollbar, Control panel1, Control panel7)
+        {
+            if (panel1.Height - panel7.Height <= 0)
+            {
+                scrollbar.Maximum = panel1.Size.Height - 106;
+            }
+            else
+            {
+                scrollbar.Maximum = panel1.Size.Height - panel7.Size.Height;
+            }
+            return;
         }
 
         private void MouseWheeling(object? sender, MouseEventArgs e)
