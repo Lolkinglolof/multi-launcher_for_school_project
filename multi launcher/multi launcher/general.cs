@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Reflection;
 
 namespace multi_launcher
 {
@@ -120,6 +121,17 @@ namespace multi_launcher
             button.Location = new Point(213, 50);
             button.BackColor = Color.Green;
             button.MouseClick += button_Click;
+            //attempt to add the icon for which store the game is from
+            if (launcher == "steam")
+            {
+                PictureBox storeicon = new PictureBox();
+                panel.Controls.Add(storeicon);
+                storeicon.Location = new Point(200,0);
+                storeicon.Size = new Size(500,40);
+                storeicon.Image = Image.FromFile(".\\steam_icon.png");
+
+            }
+            
         }
     }
 }
