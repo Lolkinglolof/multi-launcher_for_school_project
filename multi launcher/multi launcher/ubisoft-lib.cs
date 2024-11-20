@@ -35,7 +35,7 @@ public class Ubisoft_Lib
         }
 
         // Prompt the user if no common paths are found
-        //MessageBox.Show("Ubisoft manifest folder not found. Please select the correct directory.", "Path Not Found", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        MessageBox.Show("Ubisoft manifest folder not found. Please select the correct directory.", "Path Not Found", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         using (FolderBrowserDialog folderBrowser = new FolderBrowserDialog())
         {
             folderBrowser.Description = "Please locate your Ubisoft Game Launcher folder";
@@ -54,7 +54,7 @@ public class Ubisoft_Lib
 
         if (string.IsNullOrEmpty(ubisoftManifestPath) || !Directory.Exists(ubisoftManifestPath))
         {
-            //MessageBox.Show("Ubisoft manifest folder not found. Please make sure Ubisoft Connect is installed properly.", "Path Not Found", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show("Ubisoft manifest folder not found. Please make sure Ubisoft Connect is installed properly.", "Path Not Found", MessageBoxButtons.OK, MessageBoxIcon.Error);
             return installedGames;
         }
 
@@ -62,7 +62,7 @@ public class Ubisoft_Lib
 
         if (manifestFiles.Length == 0)
         {
-            //MessageBox.Show("No installed games found", "No Games Detected", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("No installed games found", "No Games Detected", MessageBoxButtons.OK, MessageBoxIcon.Information);
             return installedGames;
         }
 
