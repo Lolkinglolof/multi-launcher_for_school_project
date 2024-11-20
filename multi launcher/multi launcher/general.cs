@@ -102,7 +102,7 @@ namespace multi_launcher
             gamename.BackColor = ColorTranslator.FromHtml("#303030");
             gamename.BorderStyle = BorderStyle.None;
             gamename.ForeColor = Color.White;
-            gamename.Size = new Size(1000, 30);
+            gamename.Size = new Size(600, 30);
             gamename.Font = new Font(TextBox.DefaultFont.FontFamily, 20);
             gamename.Location = new Point(213, 5);
             gamename.ReadOnly = true;
@@ -122,16 +122,13 @@ namespace multi_launcher
             button.BackColor = Color.Green;
             button.MouseClick += button_Click;
             //attempt to add the icon for which store the game is from
-            if (launcher == "steam")
-            {
+
                 PictureBox storeicon = new PictureBox();
                 panel.Controls.Add(storeicon);
-                storeicon.Location = new Point(200,0);
+                storeicon.Location = new Point(650,30);
                 storeicon.Size = new Size(500,40);
-                storeicon.Image = Image.FromFile(".\\steam_icon.png");
-
-            }
-            
+                storeicon.SizeMode = PictureBoxSizeMode.Zoom;
+                storeicon.Image = Image.FromFile(".\\"+launcher+"_icon.png");   
         }
     }
 }
