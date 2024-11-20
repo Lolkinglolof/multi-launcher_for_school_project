@@ -1,9 +1,18 @@
 integrate ubisoft_lib
-scrolling is still a bit broken. this is maybe(?) because it is tied to the scrollbar, which is broken. Either way, it doesn't properly register when the bottom of the panel is reached, and sometimes stops too early, or too late.
+
+scrolling is still a bit broken.
+this is maybe(?) because it is tied to the scrollbar,
+which is broken. Either way, it doesn't properly register
+when the bottom of the panel is reached, and sometimes stops too early, or too late.
 
 catalogitemid useful for epic integration
 com.epicgames.launcher://apps/[CatalogNamespace]%3A[MainGameCatalogItemId]%3A[MainGameAppName]?action=launch&silent=true
 check for similarities in other games
 find the correct format for quick launching epic games games
 
-i think the gitignore prevents me from uploading the images, which may cause a crash on everyone else's end
+(Alvin):the gitignore prevents me from uploading the images, which causes a crash on everyone else's end
+
+there is no support for people who have games from steam on multiple different drives
+so Steam is found in one place, but there is also a SteamLibrary in another
+
+epic games still reads non-games (DLCs) as games
