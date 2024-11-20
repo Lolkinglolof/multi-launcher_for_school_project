@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using System.Reflection;
+using System.Xml.Linq;
 
 namespace multi_launcher
 {
@@ -57,6 +58,7 @@ namespace multi_launcher
             var btn = (Button)sender;
             string launcher = (string)btn.Tag;
             string id = (string)btn.Name;
+            
             Process p = new Process();
             if (launcher == "steam")
             {
@@ -66,7 +68,23 @@ namespace multi_launcher
             }
             if (launcher == "epic")
             {
-                p.StartInfo.FileName = id;
+                string themanifest = "";
+                string[] manifests = Epic.ManiFiles();
+                foreach (string manifest in manifests)
+                {
+                    string? displaynamecheck =File.ReadAllLines(manifest).FirstOrDefault(line => line.Contains("DisplayName"));
+                    displaynamecheck = displaynamecheck?.Replace("\"" + "DisplayName" + "\""+":", string.Empty).Replace(",",string.Empty)?.Trim()?.Trim('"');
+                    if (displaynamecheck == id)
+                    {
+                        themanifest=manifest;
+                        break;
+                    }
+                }
+
+                string MainGameCatalogItemId = Epic.GameInfo(themanifest, "MainGameCatalogItemId");
+                string MainGameAppName = Epic.GameInfo(themanifest, "MainGameAppName");
+                string CatalogNamespace = Epic.GameInfo(themanifest, "CatalogNamespace");
+                p.StartInfo.FileName = "com.epicgames.launcher://apps/" + CatalogNamespace + "%3A" + MainGameCatalogItemId + "%3A" + MainGameAppName+ "?action=launch&silent=true";
                 p.StartInfo.UseShellExecute = true;
                 p.Start();
             }
