@@ -4,3 +4,5 @@ scrolling is still a bit broken. this is maybe(?) because it is tied to the scro
 catalogitemid useful for epic integration
 check for similarities in other games
 find the correct format for quick launching epic games games
+
+i think the gitignore prevents me from uploading the images, which may cause a crash on everyone else's end
