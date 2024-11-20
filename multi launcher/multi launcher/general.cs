@@ -148,7 +148,7 @@ namespace multi_launcher
             storeicon.Location = new Point(650,30);
             storeicon.Size = new Size(500,40);
             storeicon.SizeMode = PictureBoxSizeMode.Zoom;
-            //storeicon.Image = Image.FromFile(".\\"+launcher+"_icon.png");   
+            storeicon.Image = Image.FromFile(".\\"+launcher+"_icon.png");   
         }
     }
 }

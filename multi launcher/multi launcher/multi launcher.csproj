@@ -18,6 +18,36 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+	
+	<ItemGroup>
+    <None Remove="steam_icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="steam_icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+	
+	<ItemGroup>
+    <None Remove="epic_icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="epic_icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+	
+	<ItemGroup>
+    <None Remove="ubisoft_icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="ubisoft_icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
