@@ -13,6 +13,7 @@
         {
             InitializeComponent();
             general.ReloadGames(panel1);
+            this.MinimumSize = new Size(1160, 600);
         }
 
         private void button1_Click(object sender, EventArgs e)
