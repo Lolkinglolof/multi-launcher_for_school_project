@@ -121,14 +121,15 @@ namespace multi_launcher
             button.Location = new Point(213, 50);
             button.BackColor = Color.Green;
             button.MouseClick += button_Click;
-            //attempt to add the icon for which store the game is from
-
-                PictureBox storeicon = new PictureBox();
-                panel.Controls.Add(storeicon);
-                storeicon.Location = new Point(650,30);
-                storeicon.Size = new Size(500,40);
-                storeicon.SizeMode = PictureBoxSizeMode.Zoom;
-                storeicon.Image = Image.FromFile(".\\"+launcher+"_icon.png");   
+            //
+            //creation of the store icon
+            //
+            PictureBox storeicon = new PictureBox();
+            panel.Controls.Add(storeicon);
+            storeicon.Location = new Point(650,30);
+            storeicon.Size = new Size(500,40);
+            storeicon.SizeMode = PictureBoxSizeMode.Zoom;
+            storeicon.Image = Image.FromFile(".\\"+launcher+"_icon.png");   
         }
     }
 }
