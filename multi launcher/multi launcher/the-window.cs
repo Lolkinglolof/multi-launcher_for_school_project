@@ -31,7 +31,8 @@
                             panel1 = con1;
                             if (panel1.Bottom < control.Height)
                             {
-                                panel1.Location = new Point(panel1.Location.X, -panel1.Height+panel7.Height);
+                                if (panel1.Size.Height > panel7.Size.Height)
+                                    panel1.Location = new Point(panel1.Location.X, -panel1.Height+panel7.Height);
                                 scrollbaradjust(vScrollBar1, panel1, panel7);
                                 break;
                             }
@@ -68,7 +69,8 @@
             {
                 scrollbar.Maximum = panel1.Size.Height - panel7.Size.Height;
             }
-            scrollbar.Value = -panel1.Location.Y;
+            if (panel1.Size.Height > panel7.Size.Height)
+                scrollbar.Value = -panel1.Location.Y;
             return;
         }
 
