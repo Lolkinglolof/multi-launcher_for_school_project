@@ -44,10 +44,13 @@ namespace multi_launcher
                 for (int i = 0; i < epicgames.Length; i++)
                 {
                     string name = Epic.GameName(epicgames[i]);
+                    string DLCcheck = Epic.GameInfo(epicgames[i],"AppName");
                     string id = Epic.GameInfo(epicgames[i], "DisplayName");
                     if (name.ToLower().Contains("unrealengine"))
                         continue;
-                    GamePanelCreator(id, gamelist, parentcontrol, name,Epic.imagefinder(name), "epic");
+                    if (DLCcheck.ToLower().Contains("dlc"))
+                        continue;
+                        GamePanelCreator(id, gamelist, parentcontrol, name,Epic.imagefinder(name), "epic");
                     gamelist.Add(name);
                 }
 
