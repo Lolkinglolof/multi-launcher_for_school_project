@@ -33,7 +33,7 @@
                             if (panel1.Bottom < control.Height)
                             {
                                 if (panel1.Size.Height > panel7.Size.Height)
-                                    panel1.Location = new Point(panel1.Location.X, -panel1.Height+panel7.Height);
+                                    panel1.Location = new Point(panel1.Location.X, -panel1.Height + panel7.Height);
                                 scrollbaradjust(vScrollBar1, panel1, panel7);
                                 break;
                             }
@@ -52,16 +52,50 @@
             general.ReloadGames(panel1);
             scrollbaradjust(this.vScrollBar1, panel1, panel7);
         }
-        
+
         private void button2_Click(object sender, EventArgs e)
         {
+            Control panel7 = null;
+            Control panel1 = null;
             Control send = (Control)sender;
             var col = send.Parent.BackColor;
+            var colhold = send.Parent.BackColor;
             if (col == ColorTranslator.FromHtml("#242940"))
                 col = Color.Beige;
             else if (col == Color.Beige)
                 col = ColorTranslator.FromHtml("#242940");
             send.Parent.BackColor = col;
+            foreach (Control control in send.Parent.Controls)
+            {
+                if (control.Name == "panel7")
+                {
+                    panel7 = control;
+                }
+            }
+            if (panel7 != null)
+                foreach (Control control in panel7.Controls)
+                {
+                    if (control.Name == "panel1")
+                    {
+                        panel1 = control;
+                    }
+                }
+            if (panel1 != null)
+                foreach (Control control in panel1.Controls)
+                {
+                    control.BackColor = send.Parent.BackColor;
+                    foreach (Control textbox in control.Controls)
+                    {
+                        if (textbox is TextBox)
+                        {
+                            textbox.BackColor = send.Parent.BackColor;
+                            textbox.ForeColor = colhold;
+                        }
+                        
+                    }
+                }
+
+
         }
         private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {
