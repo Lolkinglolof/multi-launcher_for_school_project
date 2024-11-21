@@ -14,6 +14,7 @@
             InitializeComponent();
             general.ReloadGames(panel1);
             scrollbaradjust(this.vScrollBar1, panel1, panel7);
+            this.BackColor = ColorTranslator.FromHtml("#242940");
             this.MinimumSize = new Size(1160, 300);
         }
         private void the_window_resize(object sender, EventArgs e)
@@ -50,6 +51,17 @@
         {
             general.ReloadGames(panel1);
             scrollbaradjust(this.vScrollBar1, panel1, panel7);
+        }
+        
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Control send = (Control)sender;
+            var col = send.Parent.BackColor;
+            if (col == ColorTranslator.FromHtml("#242940"))
+                col = Color.Beige;
+            else if (col == Color.Beige)
+                col = ColorTranslator.FromHtml("#242940");
+            send.Parent.BackColor = col;
         }
         private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {
