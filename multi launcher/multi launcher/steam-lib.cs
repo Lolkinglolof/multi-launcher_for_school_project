@@ -54,11 +54,7 @@ namespace multi_launcher
         {
             string[] gamelist = Directory.GetFiles(Directory.GetDirectories(SteamLocator(), "steamapps")[0], "*mani*").Where(file => !file.EndsWith(".tmp")).ToArray();
             if (SteamLibraryLocator() != null)
-            {
-                string[] gamesinlibrary = Directory.GetFiles(Directory.GetDirectories(SteamLibraryLocator(), "steamapps")[0], "*mani*").Where(file => !file.EndsWith(".tmp")).ToArray();
-                gamelist = gamelist.Concat(gamesinlibrary).ToArray();
-            }
-            
+                gamelist = gamelist.Concat(Directory.GetFiles(Directory.GetDirectories(SteamLibraryLocator(), "steamapps")[0], "*mani*").Where(file => !file.EndsWith(".tmp")).ToArray()).ToArray();
             for (int i = 0; i < gamelist.Count(); i++)
             {
                 Debug.WriteLine("manifest = " + gamelist[i]);
