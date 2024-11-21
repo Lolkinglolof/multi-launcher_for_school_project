@@ -12,7 +12,6 @@ namespace multi_launcher
         {
             string[] l;
             string[] ll;
-            string Steamloc;
             DriveInfo[] drives = DriveInfo.GetDrives();
             for (int i = 0; i < drives.Length; i++)
             {
@@ -26,16 +25,14 @@ namespace multi_launcher
                     for (int k = 0; k < ll.Length; k++)
                     {
                         Debug.WriteLine(ll[k]);
-                        Steamloc = ll[k];
-                        return Steamloc;
+                        return ll[k];
                     }
                 }
                 if (Directory.GetDirectories(drives[i].Name, "steam").Length == 1)
                 {
                     for (int j = 0; j < Directory.GetDirectories(drives[i].Name, "steam").Length; j++)
                     {
-                        Steamloc = Directory.GetDirectories(drives[i].Name, "steam")[1];
-                        return Steamloc;
+                        return Directory.GetDirectories(drives[i].Name, "steam")[1];                        
                     }
                 }
                 // possibly take another popular place later
@@ -45,8 +42,7 @@ namespace multi_launcher
         }
         public static string[] GameLister()
         {
-            string[] gamelist;
-            gamelist = Directory.GetFiles(Directory.GetDirectories(SteamLocator(), "steamapps")[0], "*mani*").Where(file => !file.EndsWith(".tmp")).ToArray();
+            string[] gamelist = Directory.GetFiles(Directory.GetDirectories(SteamLocator(), "steamapps")[0], "*mani*").Where(file => !file.EndsWith(".tmp")).ToArray();
             for (int i = 0; i < gamelist.Count(); i++)
             {
                 Debug.WriteLine("manifest = " + gamelist[i]);
