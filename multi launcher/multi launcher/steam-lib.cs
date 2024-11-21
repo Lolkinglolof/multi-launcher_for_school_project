@@ -37,7 +37,6 @@ namespace multi_launcher
         }
         public static string SteamLibraryLocator()
         {
-            //this exists now, but is difficult to use since you can't add arrays together
             DriveInfo[] drives = DriveInfo.GetDrives();
             for (int i = 0; i < drives.Length; i++)
             {
@@ -45,7 +44,7 @@ namespace multi_launcher
                 {
                     for (int j = 0; j < Directory.GetDirectories(drives[i].Name, "SteamLibrary").Length; j++)
                     {
-                        return Directory.GetDirectories(drives[i].Name, "SteamLibrary")[1];
+                        return Directory.GetDirectories(drives[i].Name, "SteamLibrary")[0];
                     }
                 }
             }
@@ -53,7 +52,9 @@ namespace multi_launcher
         }
         public static string[] GameLister()
         {
-            string[] gamelist = Directory.GetFiles(Directory.GetDirectories(SteamLocator(), "steamapps")[0], "*mani*").Where(file => !file.EndsWith(".tmp")).ToArray();
+            string[] gamesinsteam = Directory.GetFiles(Directory.GetDirectories(SteamLocator(), "steamapps")[0], "*mani*").Where(file => !file.EndsWith(".tmp")).ToArray();
+            string[] gamesinlibrary = Directory.GetFiles(Directory.GetDirectories(SteamLibraryLocator(), "steamapps")[0], "*mani*").Where(file => !file.EndsWith(".tmp")).ToArray();
+            string[] gamelist = gamesinsteam.Concat(gamesinlibrary).ToArray();
             for (int i = 0; i < gamelist.Count(); i++)
             {
                 Debug.WriteLine("manifest = " + gamelist[i]);
