@@ -32,7 +32,22 @@ namespace multi_launcher
                     }
                 }
                 // possibly take another popular place later
-                // support for multiple libraries probably requires a different function
+            }
+            return null;
+        }
+        public static string SteamLibraryLocator()
+        {
+            //this exists now, but is difficult to use since you can't add arrays together
+            DriveInfo[] drives = DriveInfo.GetDrives();
+            for (int i = 0; i < drives.Length; i++)
+            {
+                if (Directory.GetDirectories(drives[i].Name, "SteamLibrary").Length == 1)
+                {
+                    for (int j = 0; j < Directory.GetDirectories(drives[i].Name, "SteamLibrary").Length; j++)
+                    {
+                        return Directory.GetDirectories(drives[i].Name, "SteamLibrary")[1];
+                    }
+                }
             }
             return null;
         }
