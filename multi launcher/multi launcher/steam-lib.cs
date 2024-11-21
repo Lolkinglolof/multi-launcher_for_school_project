@@ -10,18 +10,14 @@ namespace multi_launcher
         /// <returns a list of things the first is the location of Steam and any subsequent are libraries>
         public static string SteamLocator()
         {
-            string[] l;
-            string[] ll;
             DriveInfo[] drives = DriveInfo.GetDrives();
             for (int i = 0; i < drives.Length; i++)
             {
-
-                l = Directory.GetDirectories(drives[i].Name, "*(x86)");
-
+                string[] l = Directory.GetDirectories(drives[i].Name, "*(x86)");
                 for (int j = 0; j < l.Length; j++)
                 {
                     Debug.WriteLine(l[j]);
-                    ll = Directory.GetDirectories(l[j], "steam");
+                    string[] ll = Directory.GetDirectories(l[j], "steam");
                     for (int k = 0; k < ll.Length; k++)
                     {
                         Debug.WriteLine(ll[k]);
@@ -36,7 +32,7 @@ namespace multi_launcher
                     }
                 }
                 // possibly take another popular place later
-
+                // support for multiple libraries probably requires a different function
             }
             return null;
         }
@@ -58,12 +54,9 @@ namespace multi_launcher
         }
         public static string imagefinder(string id, string type)
         {
-            string sl = SteamLocator();
-            Debug.WriteLine(sl + "/appcache/librarycache");
-            string? image = Directory.GetFiles(sl + '/' + "appcache/librarycache", id + '*' + type + '*').FirstOrDefault();
+            Debug.WriteLine(SteamLocator() + "/appcache/librarycache");
+            string? image = Directory.GetFiles(SteamLocator() + '/' + "appcache/librarycache", id + '*' + type + '*').FirstOrDefault();
             return image ?? ".\\shit_yourself.png";
         }
-        
-        
     }
 }
