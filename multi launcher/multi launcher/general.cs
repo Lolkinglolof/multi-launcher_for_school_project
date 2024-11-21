@@ -104,7 +104,7 @@ namespace multi_launcher
             parentcontrol.Controls.Add(panel);
             panel.Size = new Size(950, 106);
             panel.Location = new Point(0, 106 * gamelist.Count);
-            panel.BackColor = ColorTranslator.FromHtml("#303030"); ;
+            panel.BackColor = ColorTranslator.FromHtml("#303030");
             //
             //creation of the picture on the game banner
             //
