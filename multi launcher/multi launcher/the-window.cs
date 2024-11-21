@@ -16,6 +16,34 @@
             scrollbaradjust(this.vScrollBar1, panel1, panel7);
             this.MinimumSize = new Size(1160, 300);
         }
+        private void the_window_resize(object sender, EventArgs e)
+        {
+            Control panel1;
+            Control control = (Control)sender;
+            foreach (Control con in control.Controls)
+            {
+                if (con.Name == "panel7")
+                {
+                    foreach (Control con1 in con.Controls)
+                    {
+                        if (con1.Name == "panel1")
+                        {
+                            panel1 = con1;
+                            if (panel1.Bottom < control.Height)
+                            {
+                                panel1.Location = new Point(panel1.Location.X, -panel1.Height+panel7.Height);
+                                scrollbaradjust(vScrollBar1, panel1, panel7);
+                                break;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+
+        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -40,6 +68,7 @@
             {
                 scrollbar.Maximum = panel1.Size.Height - panel7.Size.Height;
             }
+            scrollbar.Value = -panel1.Location.Y;
             return;
         }
 

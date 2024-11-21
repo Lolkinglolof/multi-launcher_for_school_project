@@ -157,6 +157,7 @@ namespace multi_launcher
             Margin = new Padding(3, 2, 3, 2);
             Name = "the_window";
             Text = "the_window";
+            SizeChanged += the_window_resize;
             MouseWheel += MouseWheeling;
             panel7.ResumeLayout(false);
             panel7.PerformLayout();
