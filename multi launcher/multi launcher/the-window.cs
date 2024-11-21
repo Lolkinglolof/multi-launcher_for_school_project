@@ -68,6 +68,8 @@
             {
                 scrollbar.Maximum = panel1.Size.Height - panel7.Size.Height;
             }
+            //you did not fix the scroll bar, this causes a crash
+            if (-panel1.Location.Y < scrollbar.Maximum && -panel1.Location.Y > scrollbar.Minimum)
             scrollbar.Value = -panel1.Location.Y;
             return;
         }
