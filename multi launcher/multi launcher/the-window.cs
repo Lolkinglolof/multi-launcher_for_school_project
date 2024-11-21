@@ -11,10 +11,13 @@
 
         public the_window()
         {
+            this.BackColor = ColorTranslator.FromHtml("#242940");
+            // do not move the functions under this comment
             InitializeComponent();
             general.ReloadGames(panel1);
             scrollbaradjust(this.vScrollBar1, panel1, panel7);
-            this.BackColor = ColorTranslator.FromHtml("#242940");
+            // from here on ignore the last comment
+            
             this.MinimumSize = new Size(1160, 300);
         }
         private void the_window_resize(object sender, EventArgs e)
