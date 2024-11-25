@@ -1,9 +1,4 @@
-using System.Collections.Generic;
-using System.IO;
 using System.Text.Json;
-using System.Windows.Forms;
-using System;
-using multi_launcher;
 
 public class Ubisoft_Lib
 {
@@ -29,7 +24,7 @@ public class Ubisoft_Lib
             commonPaths.Add(drive.Name + @"\Ubisoft Game Launcher\games");
         }
 
-            foreach (string path in commonPaths)
+        foreach (string path in commonPaths)
         {
             if (Directory.Exists(path))
             {
@@ -37,7 +32,7 @@ public class Ubisoft_Lib
                 return path;
             }
         }
-
+        /*
         // Prompt the user if no common paths are found
         MessageBox.Show("Ubisoft manifest folder not found. Please select the correct directory.", "Path Not Found", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         using (FolderBrowserDialog folderBrowser = new FolderBrowserDialog())
@@ -48,6 +43,7 @@ public class Ubisoft_Lib
                 return folderBrowser.SelectedPath;
             }
         }
+        */
 
         return string.Empty;
     }
