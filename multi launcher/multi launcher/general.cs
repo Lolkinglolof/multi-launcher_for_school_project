@@ -127,7 +127,7 @@ namespace multi_launcher
             {
                 gamename.ForeColor = Color.White;
             }
-            else gamename.ForeColor = Color.Black;
+            else gamename.ForeColor = ColorTranslator.FromHtml("#242940");
             gamename.Size = new Size(600, 30);
             gamename.Font = new Font(TextBox.DefaultFont.FontFamily, 20);
             gamename.Location = new Point(213, 5);
