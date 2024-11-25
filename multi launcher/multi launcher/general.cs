@@ -123,7 +123,11 @@ namespace multi_launcher
             panel.Controls.Add(gamename);
             gamename.BackColor = panel.BackColor;
             gamename.BorderStyle = BorderStyle.None;
-            gamename.ForeColor = Color.White;
+            if (gamename.BackColor == ColorTranslator.FromHtml("#242940"))
+            {
+                gamename.ForeColor = Color.White;
+            }
+            else gamename.ForeColor = Color.Black;
             gamename.Size = new Size(600, 30);
             gamename.Font = new Font(TextBox.DefaultFont.FontFamily, 20);
             gamename.Location = new Point(213, 5);

@@ -1,14 +1,3 @@
 integrate ubisoft_lib
 
-(Alvin):the gitignore prevents me from uploading the images, which causes a crash on everyone else's end
-[L]note to Alvin, you can add them as an item to the solution, don't do it through the files, just use the in built function in visual studio :)
-
-there is no support for people who have games from steam on multiple different drives
-so Steam is found in one place, but there is also a SteamLibrary in another
-[L]Idea to solve: try copying the steamlocator function and changing it to search for libraries instead ( they are usually located directly in the drives )
-
-epic games still reads non-games (DLCs) as games
-[L]i'm going to fix that now, it's quite easy
-[L]i think i fixed it, it seems like it says in the "AppName" property if it's a dlc "DodoDLC2Mancana" for example, which is a dlc, so i made a check there if it contain
-
 [L] i can't find the images for all games in the files, and nothing online tells anything about it, litterally nothing, i have used over an hour now and got no results, so i belive the EG images are a lost cause.
