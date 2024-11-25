@@ -7,7 +7,7 @@ using multi_launcher;
 
 public class Ubisoft_Lib
 {
-    private string ubisoftManifestPath;
+    public string ubisoftManifestPath;
 
     public Ubisoft_Lib()
     {
@@ -17,15 +17,19 @@ public class Ubisoft_Lib
     private string LocateUbisoftManifestPath()
     {
         // Check common paths for Ubisoft manifest files
-        string[] commonPaths = new string[]
+        List<string> commonPaths = new List<string>
         {
             @"C:\Program Files (x86)\Ubisoft\Ubisoft Game Launcher\games",
             @"C:\Program Files\Ubisoft\Ubisoft Game Launcher\games",
             @"C:\ProgramData\Ubisoft\Ubisoft Game Launcher\games",
             Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + @"\Ubisoft Game Launcher\games"
         };
+        foreach (DriveInfo drive in DriveInfo.GetDrives())
+        {
+            commonPaths.Add(drive.Name + @"\Ubisoft Game Launcher\games");
+        }
 
-        foreach (string path in commonPaths)
+            foreach (string path in commonPaths)
         {
             if (Directory.Exists(path))
             {
