@@ -54,7 +54,7 @@ public class Ubisoft_Lib
 
         if (string.IsNullOrEmpty(ubisoftManifestPath) || !Directory.Exists(ubisoftManifestPath))
         {
-            MessageBox.Show("Ubisoft manifest folder not found. Please make sure Ubisoft Connect is installed properly.", "Path Not Found", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //MessageBox.Show("Ubisoft manifest folder not found. Please make sure Ubisoft Connect is installed properly.", "Path Not Found", MessageBoxButtons.OK, MessageBoxIcon.Error);
             return installedGames;
         }
 
