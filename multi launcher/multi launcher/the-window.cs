@@ -14,10 +14,10 @@
             this.BackColor = ColorTranslator.FromHtml("#242940");
             // do not move the functions under this comment
             InitializeComponent();
-            general.ReloadGames(panel1);
+            general.ReloadGames(panel1, null);
             scrollbaradjust(this.vScrollBar1, panel1, panel7);
             // from here on ignore the last comment
-            
+
             this.MinimumSize = new Size(1160, 300);
         }
         private void the_window_resize(object sender, EventArgs e)
@@ -52,7 +52,14 @@
 
         private void button1_Click(object sender, EventArgs e)
         {
-            general.ReloadGames(panel1);
+            Control con = (Control)sender;
+            string filter = null;
+            if (con.Text != null)
+            {
+                filter = con.Text;
+            }
+
+            general.ReloadGames(panel1, filter.ToLower());
             scrollbaradjust(this.vScrollBar1, panel1, panel7);
         }
 
@@ -94,7 +101,7 @@
                             textbox.BackColor = send.Parent.BackColor;
                             textbox.ForeColor = colhold;
                         }
-                        
+
                     }
                 }
 
@@ -164,6 +171,31 @@
 
             }
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            Control control = sender as Control;
+            if (control.Text.Contains("type here to search"))
+            {
+                if (control.Text.Length >= 20)
+                {
+                    control.Text = control.Text.Remove(control.Text.Length - 19);
+                }
+            }
+            if (control.Text == "type here to search")
+            {
+
+            }
+            else if (control.Text != string.Empty)
+            {
+                
+                button1_Click(sender,e);
+            }
+            else if (control.Text == string.Empty)
+            {
+                control.Text = "type here to search";
+            }
         }
     }
 }

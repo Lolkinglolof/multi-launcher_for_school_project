@@ -44,6 +44,7 @@ namespace multi_launcher
             vScrollBar1 = new VScrollBar();
             panel7 = new Panel();
             button1 = new Button();
+            textBox1 = new TextBox();
             panel7.SuspendLayout();
             SuspendLayout();
             // 
@@ -148,18 +149,27 @@ namespace multi_launcher
             // button1
             // 
             button1.Location = new Point(343, 5);
-            button1.Name = "color changer";
+            button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 5;
             button1.Text = "color change";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button2_Click;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(761, 5);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(345, 27);
+            textBox1.TabIndex = 0;
+            textBox1.TextChanged += textBox1_TextChanged;
+            // 
             // the_window
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1141, 756);
+            Controls.Add(textBox1);
             Controls.Add(button1);
             Controls.Add(panel7);
             Controls.Add(vScrollBar1);
@@ -192,5 +202,6 @@ namespace multi_launcher
         public Label label2;
         private System.ComponentModel.IContainer components;
         private Button button1;
+        private TextBox textBox1;
     }
 }

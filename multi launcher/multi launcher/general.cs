@@ -6,7 +6,7 @@ namespace multi_launcher
 {
     internal class general
     {
-        public static void ReloadGames(Control parentcontrol)
+        public static void ReloadGames(Control parentcontrol,string filter)
         {
             List<string> gamelist = new List<string>();
             // clears the board for game panels, and makes it ready for new ones
@@ -14,8 +14,19 @@ namespace multi_launcher
             gamelist.Clear();
             // catching the game manifests
             //string[] games = Enumerable.Concat(Steam.GameLister(), Epic.ManiFiles()).ToArray();
-            string[] steamgames = Steam.GameLister();
-            string[] epicgames = Epic.ManiFiles();
+            string[]? steamgames = Steam.GameLister();
+            string[]? epicgames = Epic.ManiFiles();
+            if (filter != null)
+            {
+                if (steamgames != null)
+                {
+                    steamgames = steamgames.Where(game => Steam.Gamenamer(game, "name").ToLower().Contains(filter)).ToArray();
+                }
+                if(epicgames != null)
+                {
+                    epicgames = epicgames.Where(game => Epic.GameInfo(game, "DisplayName").ToLower().Contains(filter)).ToArray();
+                }
+            }
             if (steamgames != null)
                 for (int i = 0; i < steamgames.Length; i++)
                 {
@@ -33,6 +44,7 @@ namespace multi_launcher
                     {
                         continue;
                     }
+
                     GamePanelCreator(id, gamelist, parentcontrol, name, Steam.imagefinder(id, "header"), "steam");
 
 
