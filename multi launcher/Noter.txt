@@ -1,3 +1,5 @@
 integrate ubisoft_lib
 
+
+[Alvin]check for games is currently broken. it works fine on boot, but not on the button press
 [L] i can't find the images for all games in the files, and nothing online tells anything about it, litterally nothing, i have used over an hour now and got no results, so i belive the EG images are a lost cause.
