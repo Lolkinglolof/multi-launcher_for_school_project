@@ -16,18 +16,20 @@ namespace multi_launcher
             //string[] games = Enumerable.Concat(Steam.GameLister(), Epic.ManiFiles()).ToArray();
             string[]? steamgames = Steam.GameLister();
             string[]? epicgames = Epic.ManiFiles();
-            if (filter != null)
+            if (filter != string.Empty)
             {
                 if (steamgames != null)
                 {
                     steamgames = steamgames.Where(game => Steam.Gamenamer(game, "name").ToLower().Contains(filter)).ToArray();
                 }
-                if(epicgames != null)
+                if (epicgames != null)
                 {
                     epicgames = epicgames.Where(game => Epic.GameInfo(game, "DisplayName").ToLower().Contains(filter)).ToArray();
                 }
             }
             if (steamgames != null)
+            {
+
                 for (int i = 0; i < steamgames.Length; i++)
                 {
                     string id = Steam.Gamenamer(steamgames[i], "appid");
@@ -52,6 +54,7 @@ namespace multi_launcher
 
                     gamelist.Add(name);
                 }
+            }
             if (epicgames != null)
                 for (int i = 0; i < epicgames.Length; i++)
                 {

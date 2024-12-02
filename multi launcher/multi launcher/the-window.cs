@@ -14,7 +14,7 @@
             this.BackColor = ColorTranslator.FromHtml("#242940");
             // do not move the functions under this comment
             InitializeComponent();
-            general.ReloadGames(panel1, null);
+            general.ReloadGames(panel1, string.Empty);
             scrollbaradjust(this.vScrollBar1, panel1, panel7);
             // from here on ignore the last comment
 
@@ -53,14 +53,37 @@
         private void button1_Click(object sender, EventArgs e)
         {
             Control con = (Control)sender;
-            string filter = null;
-            if (con.Text != null)
-            {
-                filter = con.Text;
-            }
 
-            general.ReloadGames(panel1, filter.ToLower());
-            scrollbaradjust(this.vScrollBar1, panel1, panel7);
+            if (sender.GetType() == typeof(Button))
+            {
+                general.ReloadGames(panel1, string.Empty);
+            }
+            else
+            {
+                string filter = string.Empty;
+                if (con.Text != string.Empty)
+                {
+                    if (con.Text == "type here to search")
+                    {
+
+                    }
+                    else
+                    {
+                        filter = con.Text;
+                    }
+
+                }
+
+                if (filter == string.Empty)
+                {
+                    general.ReloadGames(panel1, string.Empty);
+                }
+                if (filter != string.Empty)
+                {
+                    general.ReloadGames(panel1, filter.ToLower());
+                }
+                scrollbaradjust(this.vScrollBar1, panel1, panel7);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -176,6 +199,12 @@
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             Control control = sender as Control;
+            if (control.Text == string.Empty)
+            {
+                control.Text = "type here to search";
+                button1_Click(sender, e);
+
+            }
             if (control.Text.Contains("type here to search"))
             {
                 if (control.Text.Length >= 20)
@@ -189,13 +218,16 @@
             }
             else if (control.Text != string.Empty)
             {
-                
-                button1_Click(sender,e);
+                if (control.Text == "type here to search")
+                {
+
+                }
+                else
+                {
+                    button1_Click(sender, e);
+                }
             }
-            else if (control.Text == string.Empty)
-            {
-                control.Text = "type here to search";
-            }
+            
         }
     }
 }
