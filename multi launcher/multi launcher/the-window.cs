@@ -199,6 +199,7 @@
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             Control control = sender as Control;
+            TextBox textBox = control as TextBox;
             if (control.Text == string.Empty)
             {
                 control.Text = "type here to search";
@@ -210,6 +211,7 @@
                 if (control.Text.Length >= 20)
                 {
                     control.Text = control.Text.Remove(control.Text.Length - 19);
+                    textBox.SelectionStart = textBox.SelectionStart + 1;
                 }
             }
             if (control.Text == "type here to search")
